@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="m1240MountKit_px150" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="i3dConverter" version="1.0"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="px150Mount_black_mat" materialId="2" diffuseColor="0.0196078 0.0196078 0.0196078 1" emissiveColor="1 1 1 1" specularColor="0.501961 1 0">
+    </Material>
+    <Material name="px150Mount_steel_mat" materialId="1" diffuseColor="0.54902 0.54902 0.560784 1" emissiveColor="1 1 1 1" specularColor="0.501961 1 0">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="m1240MountKit_px150.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="px150Mount" nodeId="24">
+      <Shape name="hitchPin" shapeId="1" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="1"/>
+      <Shape name="hitchPinHead" shapeId="2" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="1"/>
+      <Shape name="hitchPlate0" shapeId="3" nodeId="27" castsShadows="true" receiveShadows="true" materialIds="1"/>
+      <Shape name="hitchPlate1" shapeId="4" nodeId="28" castsShadows="true" receiveShadows="true" materialIds="1"/>
+      <Shape name="mountArmLeft" shapeId="5" nodeId="29" castsShadows="true" receiveShadows="true" materialIds="2"/>
+      <Shape name="mountArmRight" shapeId="6" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="2"/>
+      <Shape name="mountBoltLeft" shapeId="7" nodeId="31" castsShadows="true" receiveShadows="true" materialIds="2"/>
+      <Shape name="mountBoltRight" shapeId="8" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="2"/>
+      <Shape name="mountCapLeft" shapeId="9" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="2"/>
+      <Shape name="mountCapRight" shapeId="10" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="2"/>
+      <Shape name="mountCheek0Left" shapeId="11" nodeId="35" castsShadows="true" receiveShadows="true" materialIds="2"/>
+      <Shape name="mountCheek0Right" shapeId="12" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="2"/>
+      <Shape name="mountCheek1Left" shapeId="13" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="2"/>
+      <Shape name="mountCheek1Right" shapeId="14" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="2"/>
+      <Shape name="mountFloorLeft" shapeId="15" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="2"/>
+      <Shape name="mountFloorRight" shapeId="16" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="2"/>
+      <Shape name="mountKeeperLeft" shapeId="17" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="2"/>
+      <Shape name="mountKeeperRight" shapeId="18" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="2"/>
+      <Shape name="mountPostLeft" shapeId="19" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="2"/>
+      <Shape name="mountPostRight" shapeId="20" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="2"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

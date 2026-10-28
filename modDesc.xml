@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modDesc descVersion="115">
+    <author>PropaineX</author>
+    <version>2.1.4.0</version>
+    <title>
+        <en>PX150 XL Windrower Pro Edition</en>
+        <de>PX150 XL Schwadschneidwerk Pro Edition</de>
+    </title>
+    <description>
+        <en><![CDATA[PX150 XL Windrower Pro Edition by PropaineX.
+15.2 m grain windrower header for the MacDon M1240.
+Cuts wheat, barley, oat, canola and soybean into swaths for pickup with the MacDon PW8. Additional crops depend on map support.
+Requires the MacDon Pack. Category: Special Headers.
+Price: $144,500. Working speed: 10 km/h. Required power: 45 kW.
+
+Changelog 2.1.4.0:
+- Lowered attachment height set to 0.25 m for testing; pitch unchanged.
+
+Changelog 2.1.3.0:
+- Lowered header front tilted up 10 degrees and cutting height lowered.
+
+Changelog 2.1.2.0:
+- Square steel cross tube between the rear braces now supports the top hitch and PropaineX name.
+- Mass set to 2.95 t.
+
+Changelog 2.1.1.0:
+- Improved store picture angle, lighting and placement.
+
+Changelog 2.1.0.0:
+- Complete M1240 windrower conversion with central grain swath.
+- Edited animated header, custom brackets, dark paint and PropaineX/PX150XL branding.
+- New shop image and Pro Edition mod icon.]]></en>
+        <de><![CDATA[PX150 XL Schwadschneidwerk Pro Edition von PropaineX.
+15,2 m Getreideschneidwerk fuer den MacDon M1240.
+Legt Weizen, Gerste, Hafer, Raps und Sojabohnen im Schwad ab. Aufnahme mit dem MacDon PW8. Weitere Fruechte erfordern Kartenunterstuetzung.
+Benoetigt das MacDon Pack. Kategorie: Sonderschneidwerke.
+Preis: 144.500 EUR. Arbeitsgeschwindigkeit: 10 km/h. Leistungsbedarf: 45 kW.
+
+Changelog 2.1.4.0:
+- Lowered attachment height set to 0.25 m for testing; pitch unchanged.
+
+Changelog 2.1.3.0:
+- Abgesenktes Schneidwerk vorne um 10 Grad angehoben, Schnitthoehe abgesenkt.
+
+Changelog 2.1.2.0:
+- Vierkant-Stahlquerrohr zwischen den hinteren Streben stuetzt jetzt Oberlenkerbock und PropaineX-Schriftzug.
+- Gewicht auf 2,95 t gesetzt.
+
+Changelog 2.1.1.0:
+- Verbessertes Shopbild mit neuer Ansicht und Platzierung.
+
+Changelog 2.1.0.0:
+- Vollstaendiger M1240-Umbau mit zentraler Schwadablage.
+- Bearbeitetes animiertes Modell, eigene Halterungen, dunkle Lackierung und PropaineX/PX150XL-Beschriftung.
+- Neues Shopbild und Pro-Edition-Modsymbol.]]></de>
+    </description>
+    <iconFilename>icon_px150xl.dds</iconFilename>
+    <multiplayer supported="true" />
+    <dependencies>
+        <dependency>pdlc_macDonPack</dependency>
+    </dependencies>
+    <l10n>
+        <text name="px150_functionWindrower">
+            <en>Cuts grain and lays a swath (MacDon M1240)</en>
+        </text>
+        <text name="px150_turnOn">
+            <en>Turn on header</en>
+        </text>
+        <text name="px150_turnOff">
+            <en>Turn off header</en>
+        </text>
+    </l10n>
+    <brands>
+        <brand name="PROPAINEX" title="PropaineX" image="brand_propainex.dds" />
+    </brands>
+    <storeItems>
+        <storeItem xmlFilename="px150xlWindrower.xml" />
+    </storeItems>
+</modDesc>

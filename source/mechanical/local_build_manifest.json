@@ -1,0 +1,18 @@
+{
+  "version": "2.1.4.0",
+  "destination": "C:\\Users\\groov\\OneDrive\\Documents\\My Games\\FarmingSimulator2025\\Testing_local\\FS25_PX150XL.zip",
+  "files": 7,
+  "bytes": 12057472,
+  "sha256": "9749d3c1f98854d7a9c17a0c02af33b16a8abafecd4ccc1a80ebac55e689b13e",
+  "entries": [
+    "brand_propainex.dds",
+    "icon_px150xl.dds",
+    "modDesc.xml",
+    "px150xlWindrower.i3d",
+    "px150xlWindrower.i3d.shapes",
+    "px150xlWindrower.xml",
+    "store_px150xl.dds"
+  ],
+  "validation": "CRC and every entry SHA-256 match source; forward slash paths; modDesc at root",
+  "scope": "complete animated edited model, approved brackets/paint/branding and M1240 grain-swath mechanics"
+}

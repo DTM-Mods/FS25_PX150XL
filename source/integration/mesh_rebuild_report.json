@@ -1,0 +1,46 @@
+{
+  "original_main_faces": 102918,
+  "retained_main_faces": 96932,
+  "physically_removed_vertices": 6771,
+  "retained_vertices": 122696,
+  "recovered_bone_count": 23,
+  "remaining_bone_indices": [
+    0,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "stripped_shapes": [
+    "johnDeereMultiCoupler",
+    "hosesDetached",
+    "drumMain_decals",
+    "logos_decals",
+    "logos_decals"
+  ],
+  "controlled_pose_test": {
+    "reference_vertex_count": 129753,
+    "final_vertex_count": 122696,
+    "max_position_error_m": 1.41421356238236e-05,
+    "mean_position_error_m": 4.190607668416571e-07,
+    "motions": [
+      "reelArm -0.15 rad",
+      "reel and reelPart +0.35 rad",
+      "knife +0.03 m"
+    ],
+    "result": "PASS"
+  }
+}

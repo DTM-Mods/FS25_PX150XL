@@ -1,0 +1,73 @@
+{
+  "version": "2.1.1.0",
+  "testRunner": "PASS 0.9.23",
+  "report": "source/validation/testrunner/testResult_FS25_PX150XL_tmp_20724_PASS.xml",
+  "mappings": 109,
+  "brokenMappings": 0,
+  "rig": {
+    "original_main_faces": 102918,
+    "retained_main_faces": 96932,
+    "physically_removed_vertices": 6771,
+    "retained_vertices": 122696,
+    "recovered_bone_count": 23,
+    "remaining_bone_indices": [
+      0,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "stripped_shapes": [
+      "johnDeereMultiCoupler",
+      "hosesDetached",
+      "drumMain_decals",
+      "logos_decals",
+      "logos_decals"
+    ],
+    "controlled_pose_test": {
+      "reference_vertex_count": 129753,
+      "final_vertex_count": 122696,
+      "max_position_error_m": 1.41421356238236e-05,
+      "mean_position_error_m": 4.190607668416571e-07,
+      "motions": [
+        "reelArm -0.15 rad",
+        "reel and reelPart +0.35 rad",
+        "knife +0.03 m"
+      ],
+      "result": "PASS"
+    }
+  },
+  "zip": {
+    "version": "2.1.1.0",
+    "destination": "C:\\Users\\groov\\OneDrive\\Documents\\My Games\\FarmingSimulator2025\\Testing_local\\FS25_PX150XL.zip",
+    "files": 7,
+    "bytes": 12034493,
+    "sha256": "bc374ecff61d1ab80cdfbe7d096a33d34d3cd498fafe5160a5913f8820cf9d0c",
+    "entries": [
+      "brand_propainex.dds",
+      "icon_px150xl.dds",
+      "modDesc.xml",
+      "px150xlWindrower.i3d",
+      "px150xlWindrower.i3d.shapes",
+      "px150xlWindrower.xml",
+      "store_px150xl.dds"
+    ],
+    "validation": "CRC and every entry SHA-256 match source; forward slash paths; modDesc at root",
+    "scope": "complete animated edited model, approved brackets/paint/branding and M1240 grain-swath mechanics"
+  },
+  "inGame": "User screenshots confirm M1240 attachment and reveal deferred unsupported upper hitch/name. Cutting/swathing/pickup not verified.",
+  "visualIntegration": "COMPLETE in runtime binary; previews no longer separate from runtime build"
+}

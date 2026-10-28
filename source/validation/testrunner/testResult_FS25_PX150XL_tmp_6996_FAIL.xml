@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testResult>
+    <metaData>
+        <version>0.9.23</version>
+        <builddate>2026-10-20 06:04:15</builddate>
+        <timeofexecution>2026-10-28 05:06:27</timeofexecution>
+        <executionduration>11.119 sec</executionduration>
+        <config>
+            <testdatapath>C:/Users/groov/AppData/Local/Temp/_MEI184682/additionals/FS25_PX150XL_tmp_6996</testdatapath>
+            <gamepath>G:/SteamLibrary/steamapps/common/Farming Simulator 25</gamepath>
+            <output>
+                <directory>C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/MOD PROJECTS/FS25_PX150XL/source/validation/testrunner</directory>
+                <formats>
+                    <format autoopenreport="False">XML</format>
+                    <format autoopenreport="True">HTML</format>
+                </formats>
+            </output>
+        </config>
+    </metaData>
+    <results testrunOutcome="FAIL">
+        <dataCollectorResults outcome="FAIL" total="6" failed="1" succeeded="5">
+            <datacollectorinfo datacollector="StoreItemCollector" successful="False">
+                <storeiconmipmaps linkedIn="FS25_PX150XL_tmp_6996/px150xlWindrower.xml">FS25_PX150XL_tmp_6996/store_px150xl.dds has 10 mips but only up to 3 are required</storeiconmipmaps>
+            </datacollectorinfo>
+        </dataCollectorResults>
+        <moduleResults outcome="FAIL" total="15" failed="2" succeeded="13">
+            <testGroup name="DXTCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="MipMapCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="TextureCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="I3DCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="ModDescCheck" passed="False">
+                <missingDescriptionLanguage>
+                    <error>required element modDesc.description.de is missing or empty</error>
+                    <required>en</required>
+                    <required>de</required>
+                </missingDescriptionLanguage>
+                <formatError>
+                    <error>description.en does not use CDATA environment</error>
+                </formatError>
+                <missingChangelog>
+                    <error>description.['en'] seems to be missing a changelog as version indicates it's an update</error>
+                </missingChangelog>
+                <modIconMipmaps>
+                    <error>mod icon 'icon_px150xl.dds' has 10 mips but 0 are required</error>
+                </modIconMipmaps>
+                <unnecessaryMipMaps>
+                    <error>brand 'PROPAINEX' uses 'brand_propainex.dds' as an overlay/gui element and does not need mipMaps.</error>
+                </unnecessaryMipMaps>
+            </testGroup>
+            <descriptionExample name="DescBuilder">
+                <modDescriptionExample>
+                    <!--the following description is based on storeItems and some elements may be missing-->
+                    <!--the description is provided only as a help and may need adjustments to follow the guidelines-->
+                    <details>description en<description>&lt;en&gt;&lt;![CDATA[
+Category: Special Headers
+Price: $144,500
+Working width: 15.2m
+Working speed: 10 kph
+]]&gt;&lt;/en&gt;</description>
+                    </details>
+                    <details>description de<description>&lt;de&gt;&lt;![CDATA[
+Shopkategorie: Sonderschneidwerke
+Preis: 144.500€
+Arbeitsbreite: 15,2m
+Arbeitsgeschwindigkeit: 10 km/h
+]]&gt;&lt;/de&gt;</description>
+                    </details>
+                    <details>description fr<description>&lt;fr&gt;&lt;![CDATA[
+Catégorie: Barres de coupe spéciales
+Prix: 144 500€
+Largeur de travail: 15,2m
+Vitesse de travail: 10 km/h
+]]&gt;&lt;/fr&gt;</description>
+                    </details>
+                </modDescriptionExample>
+            </descriptionExample>
+            <testGroup name="PreFabCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="VehicleCheck" passed="True">
+                <!--no problems found-->
+                <!--memory buffers found, memory buffers are calculated during the console testing process and are not required-->
+                <memoryBuffer>
+                    <element>storeData/*BufferMemoryUsage</element>
+                    <vehiclexml>FS25_PX150XL_tmp_6996/px150xlWindrower.xml</vehiclexml>
+                </memoryBuffer>
+            </testGroup>
+            <testGroup name="PlaceableCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="MapCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="SlotCheck" passed="True">
+                <!--no problems found-->
+                <infos>
+                    <slotUsage storeitem="FS25_PX150XL_tmp_6996/px150xlWindrower.xml">9</slotUsage>
+                    <estimatedSlotUsage storeitem="FS25_PX150XL_tmp_6996/px150xlWindrower.xml">14</estimatedSlotUsage>
+                </infos>
+            </testGroup>
+            <testGroup name="ObsoleteFiles" passed="False">
+                <basegameDuplicates>
+                    <totalWastedSpace>52.92 MB</totalWastedSpace>
+                    <!--the following files are present in the basegame-->
+                    <!--consider removing them from the mod and using a $data reference to the file in the basegame instead-->
+                    <!--this helps to reduce the overall size of your mod so it can be downloaded faster and use less memory on the players systems-->
+                    <duplicateBasegameFile md5="084aadf76e84dabb9a10d0a6f78fd2ea" wastedMemory="10.67 MB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD45X/headerHD45X_normal.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/headerHD45X/headerHD45X_normal.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="129c51ea305a51ed5c25fb897074c82c" wastedMemory="10.67 MB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD45X/headerHD45X_vmask.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/headerHD45X/headerHD45X_vmask.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="11cac38fbc1829eec6f2ee7df7bd3fb1" wastedMemory="10.67 MB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50F_normal.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/headerHD50F/headerHD50F_normal.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="8a7cc468a6328595f6477b59689db9cc" wastedMemory="10.67 MB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50F_vmask.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/headerHD50F/headerHD50F_vmask.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="25b6ada692f654ed38da5f87ce26a937" wastedMemory="2.67 MB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD45X/headerHD45XDecals_diffuse.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/headerHD45X/headerHD45XDecals_diffuse.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="536379143cbc61987851030eef4ba780" wastedMemory="2.67 MB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50FDecals_diffuse.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/headerHD50F/headerHD50FDecals_diffuse.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="f065afaa34f2dcf483d0754f2c747461" wastedMemory="1.33 MB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerAlpha_diffuse.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/shared/headers/headerAlpha_diffuse.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="642da97f16bea388bf983613c1282b53" wastedMemory="682.79 KB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50FHoses_vmask.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/headerHD50F/headerHD50FHoses_vmask.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="595e682809fd8f6115447fe6917adb46" wastedMemory="682.79 KB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerAlpha_normal.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/shared/headers/headerAlpha_normal.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="2fc59ebfeeb17a9c1bb19b5bfa8a0c36" wastedMemory="341.47 KB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades01_diffuse.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/shared/headers/headerBlades01_diffuse.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="f86c939cabd3069f6f880b8e8e9cc6fb" wastedMemory="341.46 KB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades02_diffuse.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/shared/headers/headerBlades02_diffuse.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="c3f125e1eb280c41eace1cb10446efb6" wastedMemory="170.79 KB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50FDecals_normal.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/headerHD50F/headerHD50FDecals_normal.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="a2efd881c6d12b426ee29e9bcbc00748" wastedMemory="170.79 KB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerAlpha_vmask.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/shared/headers/headerAlpha_vmask.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="2f3ca1e035953372c304de38348b56c8" wastedMemory="170.79 KB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBelt01_normal.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/shared/headers/headerBelt01_normal.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="f0a379cab46ca6caa42940c6f2580d7a" wastedMemory="170.79 KB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBelt01_vmask.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/shared/headers/headerBelt01_vmask.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="26497732d1bd2274adc2f426947bb71d" wastedMemory="170.79 KB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades01_normal.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/shared/headers/headerBlades01_normal.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="114f66335949455348ed4e9e625059fb" wastedMemory="170.79 KB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades01_vmask.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/shared/headers/headerBlades01_vmask.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="0a62d3da12866c98b4ef610a073e8644" wastedMemory="170.78 KB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades02_normal.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/shared/headers/headerBlades02_normal.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="f06d832ac173b045b3b21bdc456936eb" wastedMemory="170.78 KB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades02_vmask.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/shared/headers/headerBlades02_vmask.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="1c1d47c7d39178ddff4d5e7ae92f21c4" wastedMemory="85.45 KB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBelt02_normal.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/shared/headers/headerBelt02_normal.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="2fff93e0885a5e7e01b7c7a3db2b1653" wastedMemory="85.45 KB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBelt02_vmask.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/shared/headers/headerBelt02_vmask.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="42c0609317a66bf1a60a186f48b14d7f" wastedMemory="42.79 KB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD45X/headerHD45XDecals_normal.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/headerHD45X/headerHD45XDecals_normal.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="b67a7f5d1bbf18869fa2efc956de61f9" wastedMemory="24.14 KB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/beltXArray.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.xml</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/headerHD50F/beltXArray.dds" />
+                    </duplicateBasegameFile>
+                    <duplicateBasegameFile md5="165288175a5acac70e5f3c228a1e818f" wastedMemory="21.45 KB">
+                        <duplicateFileInTestingData file="FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50F_emissive.dds">
+                            <referencedFrom>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</referencedFrom>
+                        </duplicateFileInTestingData>
+                        <sameFileInBasegame file="$data/vehicles/johnDeere/headerHD50F/headerHD50F_emissive.dds" />
+                    </duplicateBasegameFile>
+                </basegameDuplicates>
+            </testGroup>
+            <testGroup name="PublicLuaCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="EditorCheck" passed="True">
+                <!--no problems found-->
+                <editorPath>C:/Program Files/GIANTS Software/GIANTS_Editor_10.0.14/editor.exe</editorPath>
+                <details>i3d Infos<i3DInfo>
+                        <file>FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</file>
+                        <info>total polycount of scene is at least 157,316 triangles</info>
+                    </i3DInfo>
+                </details>
+            </testGroup>
+            <testGroup name="ShaderCheckEditor" passed="True">
+                <!--no problems found-->
+                <editorPath>C:/Program Files/GIANTS Software/GIANTS_Editor_10.0.14/editor.exe</editorPath>
+                <!--This particular check is only relevant if you plan to release the mod on consoles.-->
+                <!--If the mod is meant to be released on PC only, you can ignore the warnings.-->
+            </testGroup>
+        </moduleResults>
+    </results>
+</testResult>

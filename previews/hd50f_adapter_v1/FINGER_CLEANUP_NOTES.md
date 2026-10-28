@@ -1,0 +1,1 @@
+2026-10-28 (Codex): Physically removed exactly 13 disconnected drum fingers, 104 welded vertices, from textured_preview_v1.blend. Same camera, lighting, textures and render settings preserved. Output textured_rear_no_fingers_v1.png; scratch scene textured_preview_no_fingers_v1.blend. Verified Blender render, UNTESTED in game. Production source unchanged.

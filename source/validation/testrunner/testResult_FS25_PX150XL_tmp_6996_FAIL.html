@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testResult_FS25_PX150XL_tmp_6996_FAIL</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22><text y=%2216%22 font-size=%2216%22>❌</text></svg>" >
+    <style>
+        .solution {
+            color: green;
+        }
+        .description {
+            color: green;
+            white-space: pre-line;
+        }
+        .error {
+            color: red;
+        }
+        .warning {
+            color: orange;
+        }
+        .comment {
+            font-style: italic;
+        }
+        .border {
+            border: 1px solid;
+            margin: 5px 20px 10px 25px;
+            padding: 3px;
+        }
+        .checkbox {
+            position: absolute;
+            left: -25px;
+        }
+        div, details {
+            position: relative;
+            padding-left: 25px;
+            color: black;
+        }
+        h4 {
+            margin: 0px;
+        }
+        body div h3 {
+            margin-bottom: 2px;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #222;
+                color: #e2e2e2;
+            }
+            div, details {
+                color: #e2e2e2;
+            }
+            .solution, .description {
+                color: #0c0;
+            }
+            .error {
+                color: #e00;
+            }
+        }
+    </style>
+    <script>
+        var curDetailsAreOpen = false
+        function toggleDetailsUnfolded() {
+          var detailElements = document.getElementsByTagName("details");
+          console.log(detailElements.length)
+          curDetailsAreOpen = !curDetailsAreOpen;
+          for (i = 0; i < detailElements.length; i++) {
+            detailElements[i].open = curDetailsAreOpen;
+          }
+          var button = document.getElementById("toggleDetailElementsButton");
+          if (curDetailsAreOpen) {
+            button.innerHTML = "Collapse all detail elements"
+          } else {
+            button.innerHTML = "Unfold all detail elements"
+          }
+        }
+        function isChecked(elem) {
+            const parent = elem.parentNode;
+            if (!parent._defaultColor) {
+                parent._defaultColor = parent.style.color || getComputedStyle(parent).color || "";
+            }
+            parent.style.color = elem.checked ? "#0c0" : parent._defaultColor;
+            saveStates()
+        }
+        function saveStates() {
+            const states = Array.from(document.querySelectorAll("#completed")).map(elem => elem.checked);
+            sessionStorage.setItem("checkboxes", JSON.stringify(states));
+        }
+        function restoreStates() {
+            const raw_states = sessionStorage.getItem("checkboxes");
+            if (!raw_states) return;
+            const states = JSON.parse(raw_states);
+            document.querySelectorAll("#completed").forEach((elem, i) => {
+                elem.checked = !!states[i];
+                isChecked(elem)
+            });
+        }
+        window.addEventListener("DOMContentLoaded", restoreStates);
+    </script>
+</head>
+<body>
+<h1>Test Result</h1>
+<button id="toggleDetailElementsButton" onclick="toggleDetailsUnfolded()">Unfold all detail elements</button>
+<div>
+    <div>
+        <h3> data </h3>
+        <div>version: 0.9.23</div>
+        <div>buildDate: 2026-10-20 06:04:15</div>
+        <div>timeOfExecution: 2026-10-28 05:06:27</div>
+        <div>executionDuration: 11.119 sec</div>
+        <div>config <div>testDataPath: C:/Users/groov/AppData/Local/Temp/_MEI184682/additionals/FS25_PX150XL_tmp_6996</div>
+            <div>gamePath: G:/SteamLibrary/steamapps/common/Farming Simulator 25</div>
+            <div>output <div>directory: C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/MOD PROJECTS/FS25_PX150XL/source/validation/testrunner</div>
+                <div>formats <div>format: XML (autoOpenReport: False)</div>
+                    <div>format: HTML (autoOpenReport: True)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3>results  (Testrun Outcome: FAIL)</h3>
+        <div>
+            <h3>Data Collector Results  (outcome: FAIL, total: 6, failed: 1, succeeded: 5)</h3>
+            <div>
+                <h3>dataCollectorInfo  (dataCollector: StoreItemCollector, successful: False)</h3>
+                <div class="error border">
+                    <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                    <h4>storeIconMipmaps: FS25_PX150XL_tmp_6996/store_px150xl.dds has 10 mips but only up to 3 are required (linked in: FS25_PX150XL_tmp_6996/px150xlWindrower.xml)</h4>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>Module Results  (outcome: FAIL, total: 15, failed: 2, succeeded: 13)</h3>
+            <div>
+                <h3>test group  (name: DXTCheck, passed: True)</h3>
+                <div class="comment"> no problems found</div>
+            </div>
+            <div>
+                <h3>test group  (name: MipMapCheck, passed: True)</h3>
+                <div class="comment"> no problems found</div>
+            </div>
+            <div>
+                <h3>test group  (name: TextureCheck, passed: True)</h3>
+                <div class="comment"> no problems found</div>
+            </div>
+            <div>
+                <h3>test group  (name: I3DCheck, passed: True)</h3>
+                <div class="comment"> no problems found</div>
+            </div>
+            <div>
+                <h3>test group  (name: ModDescCheck, passed: False)</h3>
+                <div class="error border">
+                    <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                    <h4>missing description language </h4>
+                    <div>error: required element modDesc.description.de is missing or empty</div>
+                    <div>required: en</div>
+                    <div>required: de</div>
+                </div>
+                <div class="error border">
+                    <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                    <h4>format error </h4>
+                    <div>error: description.en does not use CDATA environment</div>
+                </div>
+                <div class="error border">
+                    <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                    <h4>missing changelog </h4>
+                    <div>error: description.['en'] seems to be missing a changelog as version indicates it's an update</div>
+                </div>
+                <div class="error border">
+                    <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                    <h4>mod icon mipmaps </h4>
+                    <div>error: mod icon 'icon_px150xl.dds' has 10 mips but 0 are required</div>
+                </div>
+                <div class="error border">
+                    <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                    <h4>unnecessary mip maps </h4>
+                    <div>error: brand 'PROPAINEX' uses 'brand_propainex.dds' as an overlay/gui element and does not need mipMaps.</div>
+                </div>
+            </div>
+            <div>
+                <h3>description example  (name: DescBuilder)</h3>
+                <div>
+                    <h3>mod description example </h3>
+                    <div class="comment"> the following description is based on storeItems and some elements may be missing</div>
+                    <div class="comment"> the description is provided only as a help and may need adjustments to follow the guidelines</div>
+                    <details>
+                        <summary> description en</summary>
+                        <div class="description">
+                            <code> &lt;en&gt;&lt;![CDATA[
+Category: Special Headers
+Price: $144,500
+Working width: 15.2m
+Working speed: 10 kph
+]]&gt;&lt;/en&gt;</code>
+                        </div>
+                    </details>
+                    <details>
+                        <summary> description de</summary>
+                        <div class="description">
+                            <code> &lt;de&gt;&lt;![CDATA[
+Shopkategorie: Sonderschneidwerke
+Preis: 144.500€
+Arbeitsbreite: 15,2m
+Arbeitsgeschwindigkeit: 10 km/h
+]]&gt;&lt;/de&gt;</code>
+                        </div>
+                    </details>
+                    <details>
+                        <summary> description fr</summary>
+                        <div class="description">
+                            <code> &lt;fr&gt;&lt;![CDATA[
+Catégorie: Barres de coupe spéciales
+Prix: 144 500€
+Largeur de travail: 15,2m
+Vitesse de travail: 10 km/h
+]]&gt;&lt;/fr&gt;</code>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <h3>test group  (name: PreFabCheck, passed: True)</h3>
+                <div class="comment"> no problems found</div>
+            </div>
+            <div>
+                <h3>test group  (name: VehicleCheck, passed: True)</h3>
+                <div class="comment"> no problems found</div>
+                <div class="comment"> memory buffers found, memory buffers are calculated during the console testing process and are not required</div>
+                <div class="warning border">
+                    <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                    <h4>memory buffer </h4>
+                    <div>element: storeData/*BufferMemoryUsage</div>
+                    <div>vehicleXml: FS25_PX150XL_tmp_6996/px150xlWindrower.xml</div>
+                </div>
+            </div>
+            <div>
+                <h3>test group  (name: PlaceableCheck, passed: True)</h3>
+                <div class="comment"> no problems found</div>
+            </div>
+            <div>
+                <h3>test group  (name: MapCheck, passed: True)</h3>
+                <div class="comment"> no problems found</div>
+            </div>
+            <div>
+                <h3>test group  (name: SlotCheck, passed: True)</h3>
+                <div class="comment"> no problems found</div>
+                <div>
+                    <h3>infos </h3>
+                    <div>slot usage: 9 (storeItem: FS25_PX150XL_tmp_6996/px150xlWindrower.xml)</div>
+                    <div>estimated slot usage: 14 (storeItem: FS25_PX150XL_tmp_6996/px150xlWindrower.xml)</div>
+                </div>
+            </div>
+            <div>
+                <h3>test group  (name: ObsoleteFiles, passed: False)</h3>
+                <div>
+                    <h3>basegame duplicates </h3>
+                    <div>total wasted space: 52.92 MB</div>
+                    <div class="comment"> the following files are present in the basegame</div>
+                    <div class="comment"> consider removing them from the mod and using a $data reference to the file in the basegame instead</div>
+                    <div class="comment"> this helps to reduce the overall size of your mod so it can be downloaded faster and use less memory on the players systems</div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: 084aadf76e84dabb9a10d0a6f78fd2ea, wasted memory: 10.67 MB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD45X/headerHD45X_normal.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/headerHD45X/headerHD45X_normal.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD45X/headerHD45X_normal.dds' with '$data/vehicles/johnDeere/headerHD45X/headerHD45X_normal.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD45X/headerHD45X_normal.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: 129c51ea305a51ed5c25fb897074c82c, wasted memory: 10.67 MB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD45X/headerHD45X_vmask.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/headerHD45X/headerHD45X_vmask.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD45X/headerHD45X_vmask.dds' with '$data/vehicles/johnDeere/headerHD45X/headerHD45X_vmask.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD45X/headerHD45X_vmask.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: 11cac38fbc1829eec6f2ee7df7bd3fb1, wasted memory: 10.67 MB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50F_normal.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/headerHD50F/headerHD50F_normal.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50F_normal.dds' with '$data/vehicles/johnDeere/headerHD50F/headerHD50F_normal.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50F_normal.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: 8a7cc468a6328595f6477b59689db9cc, wasted memory: 10.67 MB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50F_vmask.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/headerHD50F/headerHD50F_vmask.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50F_vmask.dds' with '$data/vehicles/johnDeere/headerHD50F/headerHD50F_vmask.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50F_vmask.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: 25b6ada692f654ed38da5f87ce26a937, wasted memory: 2.67 MB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD45X/headerHD45XDecals_diffuse.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/headerHD45X/headerHD45XDecals_diffuse.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD45X/headerHD45XDecals_diffuse.dds' with '$data/vehicles/johnDeere/headerHD45X/headerHD45XDecals_diffuse.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD45X/headerHD45XDecals_diffuse.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: 536379143cbc61987851030eef4ba780, wasted memory: 2.67 MB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50FDecals_diffuse.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/headerHD50F/headerHD50FDecals_diffuse.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50FDecals_diffuse.dds' with '$data/vehicles/johnDeere/headerHD50F/headerHD50FDecals_diffuse.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50FDecals_diffuse.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: f065afaa34f2dcf483d0754f2c747461, wasted memory: 1.33 MB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerAlpha_diffuse.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/shared/headers/headerAlpha_diffuse.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerAlpha_diffuse.dds' with '$data/vehicles/johnDeere/shared/headers/headerAlpha_diffuse.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerAlpha_diffuse.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: 642da97f16bea388bf983613c1282b53, wasted memory: 682.79 KB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50FHoses_vmask.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/headerHD50F/headerHD50FHoses_vmask.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50FHoses_vmask.dds' with '$data/vehicles/johnDeere/headerHD50F/headerHD50FHoses_vmask.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50FHoses_vmask.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: 595e682809fd8f6115447fe6917adb46, wasted memory: 682.79 KB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerAlpha_normal.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/shared/headers/headerAlpha_normal.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerAlpha_normal.dds' with '$data/vehicles/johnDeere/shared/headers/headerAlpha_normal.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerAlpha_normal.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: 2fc59ebfeeb17a9c1bb19b5bfa8a0c36, wasted memory: 341.47 KB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades01_diffuse.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/shared/headers/headerBlades01_diffuse.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades01_diffuse.dds' with '$data/vehicles/johnDeere/shared/headers/headerBlades01_diffuse.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades01_diffuse.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: f86c939cabd3069f6f880b8e8e9cc6fb, wasted memory: 341.46 KB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades02_diffuse.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/shared/headers/headerBlades02_diffuse.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades02_diffuse.dds' with '$data/vehicles/johnDeere/shared/headers/headerBlades02_diffuse.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades02_diffuse.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: c3f125e1eb280c41eace1cb10446efb6, wasted memory: 170.79 KB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50FDecals_normal.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/headerHD50F/headerHD50FDecals_normal.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50FDecals_normal.dds' with '$data/vehicles/johnDeere/headerHD50F/headerHD50FDecals_normal.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50FDecals_normal.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: a2efd881c6d12b426ee29e9bcbc00748, wasted memory: 170.79 KB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerAlpha_vmask.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/shared/headers/headerAlpha_vmask.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerAlpha_vmask.dds' with '$data/vehicles/johnDeere/shared/headers/headerAlpha_vmask.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerAlpha_vmask.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: 2f3ca1e035953372c304de38348b56c8, wasted memory: 170.79 KB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBelt01_normal.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/shared/headers/headerBelt01_normal.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBelt01_normal.dds' with '$data/vehicles/johnDeere/shared/headers/headerBelt01_normal.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBelt01_normal.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: f0a379cab46ca6caa42940c6f2580d7a, wasted memory: 170.79 KB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBelt01_vmask.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/shared/headers/headerBelt01_vmask.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBelt01_vmask.dds' with '$data/vehicles/johnDeere/shared/headers/headerBelt01_vmask.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBelt01_vmask.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: 26497732d1bd2274adc2f426947bb71d, wasted memory: 170.79 KB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades01_normal.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/shared/headers/headerBlades01_normal.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades01_normal.dds' with '$data/vehicles/johnDeere/shared/headers/headerBlades01_normal.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades01_normal.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: 114f66335949455348ed4e9e625059fb, wasted memory: 170.79 KB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades01_vmask.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/shared/headers/headerBlades01_vmask.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades01_vmask.dds' with '$data/vehicles/johnDeere/shared/headers/headerBlades01_vmask.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades01_vmask.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: 0a62d3da12866c98b4ef610a073e8644, wasted memory: 170.78 KB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades02_normal.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/shared/headers/headerBlades02_normal.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades02_normal.dds' with '$data/vehicles/johnDeere/shared/headers/headerBlades02_normal.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades02_normal.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: f06d832ac173b045b3b21bdc456936eb, wasted memory: 170.78 KB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades02_vmask.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/shared/headers/headerBlades02_vmask.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades02_vmask.dds' with '$data/vehicles/johnDeere/shared/headers/headerBlades02_vmask.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBlades02_vmask.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: 1c1d47c7d39178ddff4d5e7ae92f21c4, wasted memory: 85.45 KB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBelt02_normal.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/shared/headers/headerBelt02_normal.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBelt02_normal.dds' with '$data/vehicles/johnDeere/shared/headers/headerBelt02_normal.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBelt02_normal.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: 2fff93e0885a5e7e01b7c7a3db2b1653, wasted memory: 85.45 KB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBelt02_vmask.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/shared/headers/headerBelt02_vmask.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBelt02_vmask.dds' with '$data/vehicles/johnDeere/shared/headers/headerBelt02_vmask.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/shared/headers/headerBelt02_vmask.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: 42c0609317a66bf1a60a186f48b14d7f, wasted memory: 42.79 KB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD45X/headerHD45XDecals_normal.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/headerHD45X/headerHD45XDecals_normal.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD45X/headerHD45XDecals_normal.dds' with '$data/vehicles/johnDeere/headerHD45X/headerHD45XDecals_normal.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD45X/headerHD45XDecals_normal.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: b67a7f5d1bbf18869fa2efc956de61f9, wasted memory: 24.14 KB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/beltXArray.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.xml</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/headerHD50F/beltXArray.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/beltXArray.dds' with '$data/vehicles/johnDeere/headerHD50F/beltXArray.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/beltXArray.dds'</div>
+                    </div>
+                    <div class="error border">
+                        <input type="checkbox" class="checkbox" id="completed" onchange="isChecked(this,'elem1')">
+                        <h4>duplicate basegame file  (md5: 165288175a5acac70e5f3c228a1e818f, wasted memory: 21.45 KB)</h4>
+                        <div>
+                            <h3>duplicate file in testing data  (file: FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50F_emissive.dds)</h3>
+                            <div>referenced from: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        </div>
+                        <div>
+                            <h3>same file in basegame  (file: $data/vehicles/johnDeere/headerHD50F/headerHD50F_emissive.dds)</h3>
+                        </div>
+                        <div class="solution"> → Update all references pointing to 'FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50F_emissive.dds' with '$data/vehicles/johnDeere/headerHD50F/headerHD50F_emissive.dds'</div>
+                        <div class="solution"> → After that remove 'FS25_PX150XL_tmp_6996/textures/johnDeere/headerHD50F/headerHD50F_emissive.dds'</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>test group  (name: PublicLuaCheck, passed: True)</h3>
+                <div class="comment"> no problems found</div>
+            </div>
+            <div>
+                <h3>test group  (name: EditorCheck, passed: True)</h3>
+                <div class="comment"> no problems found</div>
+                <div>Editor Path: C:/Program Files/GIANTS Software/GIANTS_Editor_10.0.14/editor.exe</div>
+                <details>
+                    <summary> i3d Infos</summary>
+                    <div>
+                        <h3>i3d Info </h3>
+                        <div>file: FS25_PX150XL_tmp_6996/px150xlWindrower.i3d</div>
+                        <div>info: total polycount of scene is at least 157,316 triangles</div>
+                    </div>
+                </details>
+            </div>
+            <div>
+                <h3>test group  (name: ShaderCheckEditor, passed: True)</h3>
+                <div class="comment"> no problems found</div>
+                <div>Editor Path: C:/Program Files/GIANTS Software/GIANTS_Editor_10.0.14/editor.exe</div>
+                <div class="comment"> This particular check is only relevant if you plan to release the mod on consoles.</div>
+                <div class="comment"> If the mod is meant to be released on PC only, you can ignore the warnings.</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

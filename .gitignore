@@ -1,0 +1,15 @@
+# Generated editor state and logs
+symbolCache/
+custom_primitives/
+debug.log
+editor.xml
+__pycache__/
+*.pyc
+*.tmp
+*.blend1
+*.blend2
+
+# Local credentials
+.env
+.env.*
+!.env.example
