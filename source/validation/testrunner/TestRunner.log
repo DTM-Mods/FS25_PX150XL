@@ -1,4 +1,4 @@
-05:20:51 INFO root - 
+16:48:40 INFO root -
 ----------------------------------------
 Farming Simulator 25 TestRunner - Version 0.9.23 - build date 2026-10-20 06:04
 Copyright (c) 2026 GIANTS Software GmbH
@@ -6,65 +6,64 @@ Copyright (c) 2026 GIANTS Software GmbH
   - built with PyInstaller
 ----------------------------------------
 
-05:20:51 INFO root - log file C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/MOD PROJECTS/FS25_PX150XL/source/validation/testrunner/TestRunner.log
-05:20:51 INFO TestRunner - Checking for update
-05:20:51 INFO TestRunner - Loading predefined testSuite and output path
-05:20:51 INFO Config - required TestRunner Config Version: 4
-05:20:51 INFO Config - zip file detected, trying to unzip in temporary folder
-05:20:51 INFO Config - Config.test_data_path: C:/Users/groov/AppData/Local/Temp/_MEI71602/additionals/FS25_PX150XL_tmp_20724
-05:20:51 INFO Config - Config.game_path: G:/SteamLibrary/steamapps/common/Farming Simulator 25
-05:20:51 INFO Config - Config.editor_path: C:/Program Files/GIANTS Software/GIANTS_Editor_10.0.14/editor.exe
-05:20:51 INFO Config - Config.output_dir: C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/MOD PROJECTS/FS25_PX150XL/source/validation/testrunner
-05:20:52 INFO FileCollector - Collected 7 files for 7 extensions
-05:20:52 INFO XMLCollector - number parsed xml files: 2 (0 excluded by settings)
-05:20:52 INFO StoreItemCollector - StoreItemCollector.collect()
-05:20:52 INFO StoreItemCollector - C:\Users\groov\AppData\Local\Temp\_MEI71602\additionals\FS25_PX150XL_tmp_20724\modDesc.xml
-05:20:52 INFO StoreItemCollector - collected 1 store items from 1 xml files
-05:20:52 INFO I3DCollector - number parsed i3d files: 1 (0 excluded by settings)
-05:20:52 INFO TextureCollector - Collecting referenced texture paths
-05:20:52 INFO TextureCollector - found 4 texture references in 2 xml files
-05:20:52 INFO TextureCollector - found 0 texture references in 0 lua files
-05:20:52 INFO DDSCollector - Parsing 3 dds file headers
-05:20:52 INFO DDSCollector - number parsed dds files: 3 (0 excluded by settings)
-05:20:52 INFO DDSCollector - number of parsed gim files: 0
-05:20:52 INFO AbstractModule - module DXTCheck result: SUCCESS
-05:20:52 INFO DXTCheck - files with invalid compression (0)
-05:20:52 INFO DXTCheck - excluded due to gim file (0)
-05:20:52 INFO MipMapCheck - Checking MipMaps for 3 dds-files
-05:20:52 INFO AbstractModule - module MipMapCheck result: SUCCESS
-05:20:52 INFO MipMapCheck - conflicted texture-files (0)
-05:20:52 INFO MipMapCheck - missing MipMaps (0)
-05:20:52 INFO MipMapCheck - unnecessary MipMaps (0)
-05:20:52 INFO MipMapCheck - excluded due to gim file (0)
-05:20:52 INFO AbstractModule - module TextureCheck result: SUCCESS
-05:20:52 INFO AbstractModule - module I3DCheck result: SUCCESS
-05:20:52 INFO ModDescCheck - Analysing modDesc FS25_PX150XL_tmp_20724/modDesc.xml
-05:20:52 INFO AbstractModule - module ModDescCheck result: SUCCESS
-05:20:52 INFO AbstractModule - module DescBuilder result: SUCCESS
-05:20:52 INFO AbstractModule - module PreFabCheck result: SUCCESS
-05:20:52 INFO AbstractModule - module VehicleCheck result: SUCCESS
-05:20:52 INFO AbstractModule - module PlaceableCheck result: SUCCESS
-05:20:52 INFO AbstractModule - module MapCheck result: SUCCESS
-05:20:52 INFO AbstractModule - module SlotCheck result: SUCCESS
-05:20:52 INFO ObsoleteFiles - Checking for obsolete content
-05:20:52 INFO ObsoleteFiles - Checking for file content duplicates
-05:20:52 INFO ObsoleteFiles - hashing 3 files for identifying duplicates
-05:20:52 INFO AbstractModule - module ObsoleteFiles result: SUCCESS
-05:20:52 INFO PublicLuaCheck - 0 lua file(s), 9 check(s) active
-05:20:52 INFO AbstractModule - module PublicLuaCheck result: SUCCESS
-05:20:52 INFO EditorCheck - 0 of 1 i3d-files excluded by filter
-05:20:52 INFO EditorCheck - Creating lua script for loading 1 i3d files
-05:20:52 INFO EditorCheck - Starting C:/Program Files/GIANTS Software/GIANTS_Editor_10.0.14/editor.exe to load 1 i3d-files
-05:20:55 INFO EditorCheck - Editor hardware profile set to: Very Low
-05:20:55 INFO EditorCheck - EditorCheck - Editor finished executing lua code
-05:20:56 INFO EditorCheck - found 0 errors in 0 i3d file(s)
-05:20:56 INFO AbstractModule - module EditorCheck result: SUCCESS
-05:20:56 INFO ShaderCheckEditor - 0 of 1 i3d-files excluded by filter
-05:20:56 INFO ShaderCheckEditor - Creating lua script for loading 1 i3d files
-05:20:56 INFO ShaderCheckEditor - Starting C:/Program Files/GIANTS Software/GIANTS_Editor_10.0.14/editor.exe to load 1 i3d-files
-05:21:00 INFO ShaderCheckEditor - ShaderCheck - Editor finished executing lua code
-05:21:00 INFO ShaderCheckEditor - Analysing ShaderCheckEditor report
-05:21:00 INFO AbstractModule - module ShaderCheckEditor result: SUCCESS
-05:21:01 INFO TestRunner - Saving test result to 'C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/MOD PROJECTS/FS25_PX150XL/source/validation/testrunner/testResult_FS25_PX150XL_tmp_20724_PASS.xml'
-05:21:01 INFO TestRunner - Saving test result to 'C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/MOD PROJECTS/FS25_PX150XL/source/validation/testrunner/testResult_FS25_PX150XL_tmp_20724_PASS.html'
-05:21:01 INFO root - Finished execution
+16:48:40 INFO root - log file C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/MOD PROJECTS/FS25_PX150XL/source/validation/testrunner/TestRunner.log
+16:48:40 INFO TestRunner - Checking for update
+16:48:41 INFO TestRunner - Loading predefined testSuite and output path
+16:48:41 INFO Config - required TestRunner Config Version: 4
+16:48:41 INFO Config - Config.test_data_path: C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/MOD PROJECTS/FS25_PX150XL/source/integration/steel_pins_build/FS25_PX150XL
+16:48:41 INFO Config - Config.game_path: G:/SteamLibrary/steamapps/common/Farming Simulator 25
+16:48:41 INFO Config - Config.editor_path: C:/Program Files/GIANTS Software/GIANTS_Editor_10.0.14/editor.exe
+16:48:41 INFO Config - Config.output_dir: C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/MOD PROJECTS/FS25_PX150XL/source/validation/testrunner
+16:48:41 INFO FileCollector - Collected 9 files for 7 extensions
+16:48:41 INFO XMLCollector - number parsed xml files: 2 (0 excluded by settings)
+16:48:41 INFO StoreItemCollector - StoreItemCollector.collect()
+16:48:41 INFO StoreItemCollector - C:\Users\groov\OneDrive\Documents\My Games\FarmingSimulator2025\MOD PROJECTS\FS25_PX150XL\source\integration\steel_pins_build\FS25_PX150XL\modDesc.xml
+16:48:41 INFO StoreItemCollector - collected 1 store items from 1 xml files
+16:48:41 INFO I3DCollector - number parsed i3d files: 1 (0 excluded by settings)
+16:48:41 INFO TextureCollector - Collecting referenced texture paths
+16:48:41 INFO TextureCollector - found 4 texture references in 2 xml files
+16:48:41 INFO TextureCollector - found 0 texture references in 2 lua files
+16:48:41 INFO DDSCollector - Parsing 3 dds file headers
+16:48:41 INFO DDSCollector - number parsed dds files: 3 (0 excluded by settings)
+16:48:41 INFO DDSCollector - number of parsed gim files: 0
+16:48:41 INFO AbstractModule - module DXTCheck result: SUCCESS
+16:48:41 INFO DXTCheck - files with invalid compression (0)
+16:48:41 INFO DXTCheck - excluded due to gim file (0)
+16:48:41 INFO MipMapCheck - Checking MipMaps for 3 dds-files
+16:48:41 INFO AbstractModule - module MipMapCheck result: SUCCESS
+16:48:41 INFO MipMapCheck - conflicted texture-files (0)
+16:48:41 INFO MipMapCheck - missing MipMaps (0)
+16:48:41 INFO MipMapCheck - unnecessary MipMaps (0)
+16:48:41 INFO MipMapCheck - excluded due to gim file (0)
+16:48:41 INFO AbstractModule - module TextureCheck result: SUCCESS
+16:48:41 INFO AbstractModule - module I3DCheck result: SUCCESS
+16:48:41 INFO ModDescCheck - Analysing modDesc FS25_PX150XL/modDesc.xml
+16:48:41 INFO AbstractModule - module ModDescCheck result: SUCCESS
+16:48:41 INFO AbstractModule - module DescBuilder result: SUCCESS
+16:48:41 INFO AbstractModule - module PreFabCheck result: SUCCESS
+16:48:41 INFO AbstractModule - module VehicleCheck result: SUCCESS
+16:48:41 INFO AbstractModule - module PlaceableCheck result: SUCCESS
+16:48:41 INFO AbstractModule - module MapCheck result: SUCCESS
+16:48:41 INFO AbstractModule - module SlotCheck result: SUCCESS
+16:48:41 INFO ObsoleteFiles - Checking for obsolete content
+16:48:41 INFO ObsoleteFiles - Checking for file content duplicates
+16:48:41 INFO ObsoleteFiles - hashing 3 files for identifying duplicates
+16:48:41 INFO AbstractModule - module ObsoleteFiles result: SUCCESS
+16:48:41 INFO PublicLuaCheck - 2 lua file(s), 9 check(s) active
+16:48:41 INFO AbstractModule - module PublicLuaCheck result: SUCCESS
+16:48:41 INFO EditorCheck - 0 of 1 i3d-files excluded by filter
+16:48:41 INFO EditorCheck - Creating lua script for loading 1 i3d files
+16:48:41 INFO EditorCheck - Starting C:/Program Files/GIANTS Software/GIANTS_Editor_10.0.14/editor.exe to load 1 i3d-files
+16:48:44 INFO EditorCheck - Editor hardware profile set to: Very Low
+16:48:45 INFO EditorCheck - EditorCheck - Editor finished executing lua code
+16:48:45 INFO EditorCheck - found 0 errors in 0 i3d file(s)
+16:48:45 INFO AbstractModule - module EditorCheck result: SUCCESS
+16:48:46 INFO ShaderCheckEditor - 0 of 1 i3d-files excluded by filter
+16:48:46 INFO ShaderCheckEditor - Creating lua script for loading 1 i3d files
+16:48:46 INFO ShaderCheckEditor - Starting C:/Program Files/GIANTS Software/GIANTS_Editor_10.0.14/editor.exe to load 1 i3d-files
+16:48:49 INFO ShaderCheckEditor - ShaderCheck - Editor finished executing lua code
+16:48:50 INFO ShaderCheckEditor - Analysing ShaderCheckEditor report
+16:48:50 INFO AbstractModule - module ShaderCheckEditor result: SUCCESS
+16:48:50 INFO TestRunner - Saving test result to 'C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/MOD PROJECTS/FS25_PX150XL/source/validation/testrunner/testResult_FS25_PX150XL_PASS.xml'
+16:48:50 INFO TestRunner - Saving test result to 'C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/MOD PROJECTS/FS25_PX150XL/source/validation/testrunner/testResult_FS25_PX150XL_PASS.html'
+16:48:50 INFO root - Finished execution

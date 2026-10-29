@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <modDesc descVersion="115">
     <author>PropaineX</author>
-    <version>2.1.4.0</version>
+    <version>2.5.1.0</version>
     <title>
         <en>PX150 XL Windrower Pro Edition</en>
         <de>PX150 XL Schwadschneidwerk Pro Edition</de>
@@ -12,6 +12,31 @@
 Cuts wheat, barley, oat, canola and soybean into swaths for pickup with the MacDon PW8. Additional crops depend on map support.
 Requires the MacDon Pack. Category: Special Headers.
 Price: $144,500. Working speed: 10 km/h. Required power: 45 kW.
+
+Changelog 2.5.1.0:
+- Reduced mass to 2,450 kg.
+- Fixed showroom floor placement and physics stability.
+- Centered right-hand model lettering in the black stripe.
+- Added native MacDon Red to Accessories and trim and made it the default.
+
+Changelog 2.5.0.0:
+- Pins stay metallic steel; sockets and upper hitch follow Accessories and trim.
+- Lowered stance targets 5 cm rear socket clearance while retaining the original front cutting height.
+
+Changelog 2.4.0.0:
+- Accessories and trim color option now recolors both end-cap stickers and the complete custom MacDon attacher together, for $250.
+
+Changelog 2.3.0.0:
+- End cap color shop option with full native color palette; only the sticker changes color.
+
+Changelog 2.2.1.0:
+- Added ground collisions to the left and right rear brackets.
+
+Changelog 2.2.0.0:
+- Built-in 10% swath yield bonus for this header.
+
+Changelog 2.1.5.0:
+- Raised lowered attachment height to 0.30 m; pitch unchanged.
 
 Changelog 2.1.4.0:
 - Lowered attachment height set to 0.25 m for testing; pitch unchanged.
@@ -35,6 +60,25 @@ Changelog 2.1.0.0:
 Legt Weizen, Gerste, Hafer, Raps und Sojabohnen im Schwad ab. Aufnahme mit dem MacDon PW8. Weitere Fruechte erfordern Kartenunterstuetzung.
 Benoetigt das MacDon Pack. Kategorie: Sonderschneidwerke.
 Preis: 144.500 EUR. Arbeitsgeschwindigkeit: 10 km/h. Leistungsbedarf: 45 kW.
+
+Changelog 2.5.0.0:
+- Bolzen bleiben metallisch; Aufnahmen und oberer Anbaupunkt folgen der Zubehoerfarbe.
+- Abgesenkte Stellung mit 5 cm Abstand unter den hinteren Aufnahmen bei unveraenderter vorderer Schnitthoehe.
+
+Changelog 2.4.0.0:
+- Gemeinsame Farbwahl fuer Endkappenaufkleber und kompletten eigenen MacDon-Anbaurahmen fuer $250.
+
+Changelog 2.3.0.0:
+- Endkappenfarbe im Shop mit kompletter Standardfarbpalette; nur der Aufkleber wechselt die Farbe.
+
+Changelog 2.2.1.0:
+- Bodenkollisionen fuer linke und rechte hintere Halterung hinzugefuegt.
+
+Changelog 2.2.0.0:
+- Integrierter Schwadertragsbonus von 10% fuer dieses Schneidwerk.
+
+Changelog 2.1.5.0:
+- Raised lowered attachment height to 0.30 m; pitch unchanged.
 
 Changelog 2.1.4.0:
 - Lowered attachment height set to 0.25 m for testing; pitch unchanged.
@@ -69,10 +113,34 @@ Changelog 2.1.0.0:
         <text name="px150_turnOff">
             <en>Turn off header</en>
         </text>
+        <text name="px150_accessoriesTrim">
+            <en>Accessories and trim</en>
+            <de>Zubehoer und Zierleisten</de>
+        </text>
+        <text name="px150_macDonRed">
+            <en>MacDon Red</en>
+            <de>MacDon Rot</de>
+        </text>
+        <text name="px150_endCapOrange">
+            <en>PropaineX orange</en>
+            <de>PropaineX Orange</de>
+        </text>
     </l10n>
     <brands>
         <brand name="PROPAINEX" title="PropaineX" image="brand_propainex.dds" />
     </brands>
+    <specializations>
+        <specialization name="yieldBonus" className="PX150YieldBonus" filename="scripts/PX150YieldBonus.lua" />
+        <specialization name="loweredClearance" className="PX150LoweredClearance" filename="scripts/PX150LoweredClearance.lua" />
+        <specialization name="shopDisplay" className="PX150ShopDisplay" filename="scripts/PX150ShopDisplay.lua" />
+    </specializations>
+    <vehicleTypes>
+        <type name="px150Windrower" parent="mower">
+            <specialization name="yieldBonus" />
+            <specialization name="loweredClearance" />
+            <specialization name="shopDisplay" />
+        </type>
+    </vehicleTypes>
     <storeItems>
         <storeItem xmlFilename="px150xlWindrower.xml" />
     </storeItems>

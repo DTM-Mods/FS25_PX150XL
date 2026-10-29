@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<vehicle type="mower">
+<vehicle type="px150Windrower">
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
     <storeData>
         <name>PX150XL Windrower</name>
@@ -15,8 +15,9 @@
         <rotation>0</rotation>
         <brand>PROPAINEX</brand>
         <category>specialHeaders</category>
-        <shopTranslationOffset>0 -0.036 0</shopTranslationOffset>
+        <shopTranslationOffset>0 0.49 0</shopTranslationOffset>
         <shopRotationOffset>-3.658 0 0</shopRotationOffset>
+        <shopIgnoreLastComponentPositions>true</shopIgnoreLastComponentPositions>
     </storeData>
     <base>
         <typeDesc>$l10n_typeDesc_mower</typeDesc>
@@ -24,7 +25,7 @@
         <size width="16.1" length="3.25" height="2.35" lengthOffset="-0.1" />
         <speedLimit value="10" />
         <components>
-            <component centerOfMass="0 0.2 -0.2" solverIterationCount="10" mass="2950" />
+            <component centerOfMass="0 0.2 -0.2" solverIterationCount="10" mass="2450" />
         </components>
         <schemaOverlay attacherJointPosition="0 0" name="COMBINE_HEADER" />
         <mapHotspot type="CUTTER" />
@@ -55,7 +56,7 @@
         <inputAttacherJoints>
             <inputAttacherJoint node="attacherJointM1240" jointType="cutter" lowerRotLimitScale="0 0 0" lowerRotationOffset="10" upperRotationOffset="5" topReferenceNode="topReferenceM1240" bottomArmLeftNode="bottomArmLeftM1240" bottomArmRightNode="bottomArmRightM1240">
                 <subType name="m1240" showWarning="false" />
-                <distanceToGround lower="0.25" upper="2.2" />
+                <distanceToGround lower="0.30" upper="2.2" />
             </inputAttacherJoint>
         </inputAttacherJoints>
     </attachable>
@@ -198,6 +199,11 @@
     </foliageBending>
     <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2" />
     <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2" />
+    <designColorConfigurations title="$l10n_px150_accessoriesTrim" useDefaultColors="true" price="250" defaultColorMaterialTemplateName="calibratedPaint">
+        <designColorConfiguration name="$l10n_px150_macDonRed" color="MACDON_RED" materialTemplateName="calibratedPaint" isDefault="true" price="250" />
+        <designColorConfiguration name="$l10n_px150_endCapOrange" color="0.8 0.16 0.018" materialTemplateName="calibratedPaint" price="250" />
+        <material materialSlotName="px150_endCapSticker" materialTemplateUseColorOnly="true" />
+    </designColorConfigurations>
     <i3dMappings>
         <i3dMapping id="headerHD50F_main_component1" node="0&gt;" />
         <i3dMapping id="headerHD50F_vis" node="0&gt;0" />

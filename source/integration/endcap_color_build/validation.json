@@ -1,0 +1,15 @@
+{
+  "version": "2.3.0.0",
+  "stickerShapes": 2,
+  "trianglesPerSide": 493,
+  "palette": "Native useDefaultColors=true (includes native custom color handling)",
+  "slot": "px150_endCapSticker",
+  "defaultColor": [
+    0.8,
+    0.16,
+    0.018
+  ],
+  "validation": "TestRunner all groups PASS; direct compiled GE material slot red/blue/orange check PASS,96 other slots unchanged; original hierarchy, skins, materials and all prior vehicle settings unchanged; black stripe geometry mask preserved",
+  "inGame": "Shop interaction and save/reload not tested",
+  "packaged": false
+}

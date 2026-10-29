@@ -1,0 +1,8 @@
+{
+  "version": "2.4.0.0",
+  "destination": "/testing/FS25_PX150XL.zip",
+  "bytes": 12204409,
+  "sha256": "e78218e3bf0f7b3ee4fd2970de5c010650d01044d45d2c2b198d9b2fb4b10558",
+  "hostKeyVerified": true,
+  "validation": "temporary upload and final renamed file both SHA-256 readback matched local ZIP"
+}

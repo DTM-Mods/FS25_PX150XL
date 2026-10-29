@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<editor version="10.0.14">
+    <window_layout x="0" y="0" width="1280" height="1392" perspective="layout2|name=FloatingMenu - Scripts > Shared Scripts > Camera;caption=Scripts > Shared Scripts > Camera;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=189;besth=72;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=189;compareh=72|name=FloatingMenu - Scripts > Shared Scripts > Map > Seasons;caption=Scripts > Shared Scripts > Map > Seasons;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=154;besth=48;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=154;compareh=48|name=FloatingMenu - Scripts > Shared Scripts > Map > Terrain;caption=Scripts > Shared Scripts > Map > Terrain;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=181;besth=72;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=181;compareh=72|name=FloatingMenu - Scripts > Shared Scripts > Map;caption=Scripts > Shared Scripts > Map;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=147;besth=120;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=147;compareh=120|name=FloatingMenu - Scripts > Shared Scripts > Vehicles;caption=Scripts > Shared Scripts > Vehicles;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=155;besth=48;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=155;compareh=48|name=FloatingMenu - Scripts > Shared Scripts;caption=Scripts > Shared Scripts;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=78;besth=72;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=78;compareh=72|name=FloatingMenu - Scripts > User Scripts;caption=Scripts > User Scripts;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=170;besth=24;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=170;compareh=24|name=FloatingMenu - Scripts;caption=Scripts;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=169;besth=100;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=169;compareh=100|name=FloatingMenu - Edit;caption=Edit;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=238;besth=316;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=238;compareh=316|name=FloatingMenu - Create;caption=Create;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=156;besth=240;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=156;compareh=240|name=FloatingMenu - Window > Toolbars;caption=Window > Toolbars;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=110;besth=144;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=110;compareh=144|name=FloatingMenu - Window;caption=Window;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=160;besth=460;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=160;compareh=460|name=FloatingMenu - View > Show;caption=View > Show;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=146;besth=408;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=146;compareh=408|name=FloatingMenu - View > Show > Physics Selection;caption=View > Show > Physics Selection;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=270;besth=460;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=270;compareh=460|name=FloatingMenu - View > Selectable;caption=View > Selectable;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=146;besth=288;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=146;compareh=288|name=FloatingMenu - View > Profile;caption=View > Profile;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=106;besth=264;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=106;compareh=264|name=FloatingMenu - View > Debug;caption=View > Debug;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=103;besth=120;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=103;compareh=120|name=FloatingMenu - View > Texture Streaming > Behavior;caption=View > Texture Streaming > Behavior;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=190;besth=96;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=190;compareh=96|name=FloatingMenu - View > Texture Streaming;caption=View > Texture Streaming;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=81;besth=48;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=81;compareh=48|name=FloatingMenu - View;caption=View;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=147;besth=368;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=147;compareh=368|name=FloatingMenu - Create > Primitives;caption=Create > Primitives;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=79;besth=144;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=79;compareh=144|name=Scenegraph;caption=Scenegraph;state=2099196;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=182;besth=25;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=182;compareh=25|name=Mesh Viewer;caption=Mesh Viewer;state=2099198;dir=2;layer=0;row=0;pos=0;prop=100000;bestw=162;besth=16;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=162;compareh=16|name=Viewport;caption=Viewport;state=2099196;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=20;besth=20;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=20;compareh=20|name=Attributes;caption=Attributes;state=2099196;dir=2;layer=0;row=0;pos=0;prop=100000;bestw=325;besth=768;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=325;compareh=768|name=Notebook Editing 1;caption=Height;state=2099198;dir=2;layer=0;row=0;pos=0;prop=100000;bestw=320;besth=500;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=320;compareh=500|name=Notebook Editing 2;caption=;state=2099198;dir=2;layer=0;row=0;pos=0;prop=100000;bestw=320;besth=500;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=320;compareh=500|name=Notebook Editing 3;caption=;state=2099198;dir=2;layer=0;row=0;pos=0;prop=100000;bestw=320;besth=500;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=320;compareh=500|name=Notebook Editing 4;caption=;state=2099198;dir=2;layer=0;row=0;pos=0;prop=100000;bestw=320;besth=500;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=320;compareh=500|name=Notebook Editing 5;caption=;state=2099198;dir=2;layer=0;row=0;pos=0;prop=100000;bestw=320;besth=500;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=320;compareh=500|name=Notebook Editing 6;caption=;state=2099198;dir=2;layer=0;row=0;pos=0;prop=100000;bestw=320;besth=500;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=320;compareh=500|name=Animation;caption=Animation;state=2099198;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=489;besth=138;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=489;compareh=138|name=Particle Editing;caption=Particle Editing;state=2099198;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=20;besth=20;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=20;compareh=20|name=Material Editing;caption=Material Editing;state=2099198;dir=2;layer=0;row=0;pos=0;prop=100000;bestw=20;besth=20;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=20;compareh=20|name=PostFx Editing;caption=PostFx Editing;state=2099198;dir=2;layer=0;row=0;pos=0;prop=100000;bestw=20;besth=20;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=20;compareh=20|name=Mod Metadata;caption=Mod Metadata;state=2099198;dir=2;layer=0;row=0;pos=0;prop=100000;bestw=20;besth=20;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=20;compareh=20|name=Texture Streaming;caption=Texture Streaming;state=2099198;dir=2;layer=0;row=0;pos=0;prop=100000;bestw=20;besth=20;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=20;compareh=20|name=Environment Settings;caption=Environment Settings;state=2099198;dir=2;layer=0;row=0;pos=0;prop=100000;bestw=20;besth=20;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=20;compareh=20|name=tb1;caption=File Toolbar;state=2108144;dir=1;layer=10;row=0;pos=0;prop=100000;bestw=223;besth=24;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=223;compareh=24|name=tb2;caption=Playback Toolbar;state=2108144;dir=1;layer=10;row=0;pos=234;prop=100000;bestw=85;besth=24;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=85;compareh=24|name=tb3;caption=Mode Toolbar;state=2108144;dir=1;layer=10;row=0;pos=330;prop=100000;bestw=138;besth=24;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=138;compareh=24|name=tb4;caption=Terrain Toolbar;state=2108144;dir=1;layer=10;row=0;pos=479;prop=100000;bestw=138;besth=24;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=138;compareh=24|name=tb5;caption=Misc Toolbar;state=2108144;dir=1;layer=10;row=0;pos=628;prop=100000;bestw=115;besth=24;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=115;compareh=24|name=dyntb5;caption=Scripts 1;state=2108146;dir=1;layer=10;row=0;pos=4;prop=100000;bestw=1;besth=1;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=1;compareh=1|name=dyntb6;caption=Scripts 2;state=2108146;dir=1;layer=10;row=0;pos=5;prop=100000;bestw=1;besth=1;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=1;compareh=1|name=dyntb7;caption=Scripts 3;state=2108146;dir=1;layer=10;row=0;pos=6;prop=100000;bestw=1;besth=1;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=1;compareh=1|name=dyntb8;caption=Scripts 4;state=2108146;dir=1;layer=10;row=0;pos=7;prop=100000;bestw=1;besth=1;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=1;compareh=1|name=dyntb9;caption=Scripts 5;state=2108146;dir=1;layer=10;row=0;pos=8;prop=100000;bestw=1;besth=1;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=1;compareh=1|name=Console;caption=Console;state=2099196;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=20;besth=150;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;comparew=20;compareh=150|dock_size(4,0,0)=184|dock_size(2,0,0)=327|dock_size(5,0,0)=22|dock_size(1,10,0)=26|dock_size(3,0,0)=169|" maximized="false"/>
+    <undo stack_size="25"/>
+    <grid enable="false" subdivisions="24" spacing="1.000000"/>
+    <viewport nav_translation_scale="0.050000" nav_rotation_scale="0.004000" framed_rotate="false" frame_distance_scale="1.000000" enable_terrain_edit_preview="false" brush_step_size="1.000000" interactive_placement_scale="0.000000" show_delta_manipulation="true" show_translation_plane="false" translation_plane_subdivision="0" translation_plane_scale="1.000000" max_spline_curvature="1.000000" background_color="0.362000;0.362000;0.362000"/>
+    <file_recent files="C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/MOD PROJECTS/FS25_PX150XL/previews/hd50f_adapter_v1/headerHD50F.i3d;C:/Users/groov/GE_work/wr6/px150xlWindrower.i3d;C:/Users/groov/GE_work/wr5/px150xlWindrower.i3d;C:/Users/groov/GE_work/wr4/px150xlWindrower.i3d;C:/Users/groov/GE_work/wr3/px150xlWindrower.i3d;C:/Users/groov/GE_work/wr2/px150xlWindrower.i3d;C:/Users/groov/GE_work/wr/px150xlWindrower.i3d;C:/Users/groov/GE_work/px150/px150xl.i3d;C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/MOD PROJECTS/FS25_BoxTruck_ProEdition/previews/curtain_straps_motion_v1/straps.i3d"/>
+    <gizmo size="10.000000" frame_size="2.000000" frame_radius_scale="0.040000" nurbs_curve_picking_cv_radius="1.000000"/>
+    <warning show_save_warning="true"/>
+    <info update_notification="true" dnd_as_reference="false"/>
+    <logging file="true"/>
+    <show>
+        <poly_count>true</poly_count>
+        <lights>true</lights>
+        <cameras>true</cameras>
+        <audio_sources>true</audio_sources>
+        <physics>false</physics>
+        <physicssettings>
+            <frames>false</frames>
+            <aabbs>false</aabbs>
+            <contactpoints>false</contactpoints>
+            <constraints>false</constraints>
+            <constraintlimits>false</constraintlimits>
+            <centersofmass>false</centersofmass>
+            <wheels>true</wheels>
+            <collisiongeometriesstatic>true</collisiongeometriesstatic>
+            <collisiongeometriesdynamic>true</collisiongeometriesdynamic>
+            <collisiongeometrieskinematic>true</collisiongeometrieskinematic>
+            <collisiongeometriestrigger>false</collisiongeometriestrigger>
+            <collisiongeometriesterrain>false</collisiongeometriesterrain>
+            <nodepthmode>false</nodepthmode>
+            <inertias>false</inertias>
+            <collisiongeometriesterraindetail>false</collisiongeometriesterraindetail>
+            <collisiongeometriesterraindisplacement>false</collisiongeometriesterraindisplacement>
+            <visualizemargins>false</visualizemargins>
+        </physicssettings>
+        <bones>false</bones>
+        <nav_meshes>false</nav_meshes>
+        <dynamics>true</dynamics>
+        <gettingstarteddialog>false</gettingstarteddialog>
+        <shapeBoundingVolumes>false</shapeBoundingVolumes>
+        <occluders>false</occluders>
+        <selected>true</selected>
+        <foliage>true</foliage>
+        <splineCVs>true</splineCVs>
+        <splineEPs>true</splineEPs>
+        <notes>true</notes>
+        <terrainWireframe>false</terrainWireframe>
+        <terrainDecals>false</terrainDecals>
+        <outlineSelection>true</outlineSelection>
+        <wireframeSelection>false</wireframeSelection>
+    </show>
+    <select>
+        <lights>true</lights>
+        <cameras>true</cameras>
+        <audio_sources>true</audio_sources>
+        <cameras>true</cameras>
+        <terrains>false</terrains>
+        <nonrenderable>false</nonrenderable>
+        <splines>true</splines>
+        <splineCVs>true</splineCVs>
+        <splineEPs>true</splineEPs>
+        <meshes>true</meshes>
+        <notes>true</notes>
+        <singleWeightBones>true</singleWeightBones>
+        <terrainDecals>true</terrainDecals>
+    </select>
+    <terrain panelLayout="0,0,0,0,0,0,">
+        <brush>
+            <radius>5</radius>
+            <opacity>1</opacity>
+            <hardness>0.5</hardness>
+            <value>0.1</value>
+            <lmb_func>1</lmb_func>
+            <mmb_func>2</mmb_func>
+            <rmb_func>3</rmb_func>
+            <replace>0</replace>
+        </brush>
+        <painting>
+            <chunk_vis_enable>true</chunk_vis_enable>
+            <chunk_vis_clip_dist>300</chunk_vis_clip_dist>
+            <channel_mask>0</channel_mask>
+            <foliage_layer>0</foliage_layer>
+        </painting>
+        <brush_sculpting collapsedFoldPanelItems="">
+            <radius>5.000000</radius>
+            <opacityLMB>1.000000</opacityLMB>
+            <opacityMMB>1.000000</opacityMMB>
+            <opacityRMB>1.000000</opacityRMB>
+            <hardness>0.500000</hardness>
+            <replace>0.000000</replace>
+            <view_processed>false</view_processed>
+            <lmb_func>0</lmb_func>
+            <mmb_func>1</mmb_func>
+            <rmb_func>2</rmb_func>
+            <perlin_randomness_enabled>false</perlin_randomness_enabled>
+            <perlin_seed>0</perlin_seed>
+            <perlin_persistence>0.600000</perlin_persistence>
+            <perlin_frequency>0.250000</perlin_frequency>
+            <perlin_nbr_octaves>7</perlin_nbr_octaves>
+            <erode_type>0</erode_type>
+            <erode_thermal_iterations>50</erode_thermal_iterations>
+            <erode_thermal_slope>45.000000</erode_thermal_slope>
+            <erode_thermal_blendweight>0.500000</erode_thermal_blendweight>
+            <erode_hydraulic_rain>50</erode_hydraulic_rain>
+            <erode_hydraulic_iterations>50</erode_hydraulic_iterations>
+            <erode_hydraulic_erosion_rate>0.001000</erode_hydraulic_erosion_rate>
+            <erode_hydraulic_deposition_rate>0.010000</erode_hydraulic_deposition_rate>
+            <erode_hydraulic_friction>0.050000</erode_hydraulic_friction>
+            <erode_hydraulic_speed>0.010000</erode_hydraulic_speed>
+            <erode_hydraulic_show_feedback>true</erode_hydraulic_show_feedback>
+        </brush_sculpting>
+        <brush_texture collapsedFoldPanelItems="">
+            <radius>5.000000</radius>
+            <opacityLMB>1.000000</opacityLMB>
+            <hardness>0.500000</hardness>
+            <lmb_func>0</lmb_func>
+            <mmb_func>1</mmb_func>
+            <rmb_func>2</rmb_func>
+            <perlin_randomness_enabled>false</perlin_randomness_enabled>
+            <perlin_seed>0</perlin_seed>
+            <perlin_persistence>0.600000</perlin_persistence>
+            <perlin_frequency>0.250000</perlin_frequency>
+            <perlin_nbr_octaves>7</perlin_nbr_octaves>
+        </brush_texture>
+        <brush_mesh collapsedFoldPanelItems="">
+            <radius>5.000000</radius>
+            <opacityLMB>1.000000</opacityLMB>
+            <hardness>0.500000</hardness>
+            <lmb_func>0</lmb_func>
+            <mmb_func>1</mmb_func>
+            <rmb_func>2</rmb_func>
+        </brush_mesh>
+        <brush_foliage collapsedFoldPanelItems="">
+            <radius>5.000000</radius>
+            <opacityLMB>1.000000</opacityLMB>
+            <hardness>0.500000</hardness>
+            <lmb_func>0</lmb_func>
+            <mmb_func>1</mmb_func>
+            <rmb_func>2</rmb_func>
+            <perlin_randomness_enabled>false</perlin_randomness_enabled>
+            <perlin_seed>0</perlin_seed>
+            <perlin_persistence>0.600000</perlin_persistence>
+            <perlin_frequency>0.250000</perlin_frequency>
+            <perlin_nbr_octaves>7</perlin_nbr_octaves>
+        </brush_foliage>
+        <brush_info collapsedFoldPanelItems="">
+            <radius>5.000000</radius>
+            <opacityLMB>1.000000</opacityLMB>
+            <hardness>0.500000</hardness>
+            <lmb_func>0</lmb_func>
+            <mmb_func>1</mmb_func>
+            <rmb_func>2</rmb_func>
+        </brush_info>
+        <brush_procedural_placement collapsedFoldPanelItems="">
+            <radius>5.000000</radius>
+            <opacityLMB>1.000000</opacityLMB>
+            <hardness>0.500000</hardness>
+            <lmb_func>0</lmb_func>
+            <mmb_func>1</mmb_func>
+            <rmb_func>2</rmb_func>
+            <perlin_randomness_enabled>false</perlin_randomness_enabled>
+            <perlin_seed>0</perlin_seed>
+            <perlin_persistence>0.600000</perlin_persistence>
+            <perlin_frequency>0.250000</perlin_frequency>
+            <perlin_nbr_octaves>7</perlin_nbr_octaves>
+        </brush_procedural_placement>
+        <onthefly>false</onthefly>
+        <mesh>
+            <distance_max>10.000000</distance_max>
+            <distance_min>3.000000</distance_min>
+            <slope_start>0.000000</slope_start>
+            <slope_end>90.000000</slope_end>
+            <scale_max>1.000000</scale_max>
+            <scale_min>1.000000</scale_min>
+            <align_to_terrain>false</align_to_terrain>
+            <y_rotate>true</y_rotate>
+        </mesh>
+    </terrain>
+    <save>
+        <i3d force_external_binary_files="false"/>
+        <obj>
+            <cull_frustum>true</cull_frustum>
+            <only_terrain>false</only_terrain>
+            <scale>100.000000</scale>
+        </obj>
+        <toolbars>
+            <toolbar name="Scripts 1"/>
+            <toolbar name="Scripts 2"/>
+            <toolbar name="Scripts 3"/>
+            <toolbar name="Scripts 4"/>
+            <toolbar name="Scripts 5"/>
+        </toolbars>
+        <common>
+            <texteditor></texteditor>
+            <giantsstudio></giantsstudio>
+            <gameinstallationpath>G:/SteamLibrary/steamapps/common/Farming Simulator 25/</gameinstallationpath>
+        </common>
+        <rgapath></rgapath>
+        <scripting includedirectories="C:/Program Files/GIANTS Software/GIANTS_Editor_10.0.14/scripts/;G:/SteamLibrary/steamapps/common/Farming Simulator 25/;"/>
+        <attributes recentNoteColors="0;0;0;0;0;0"/>
+    </save>
+    <script_dirs disabledAlwaysLoaded="" paths=""/>
+    <shortcuts>
+        <item id="openFile" binding="Ctrl+O" bindingAlt=""/>
+        <item id="saveFile" binding="Ctrl+S" bindingAlt=""/>
+        <item id="saveAs" binding="Ctrl+Shift+S" bindingAlt=""/>
+        <item id="exit" binding="Alt+F4" bindingAlt=""/>
+        <item id="undo" binding="Ctrl+Z" bindingAlt=""/>
+        <item id="redo" binding="Ctrl+Y" bindingAlt=""/>
+        <item id="cut" binding="Ctrl+X" bindingAlt=""/>
+        <item id="copy" binding="Ctrl+C" bindingAlt=""/>
+        <item id="paste" binding="Ctrl+V" bindingAlt=""/>
+        <item id="pastePreserveWorldTransformation" binding="Alt+Ctrl+V" bindingAlt=""/>
+        <item id="duplicate" binding="Ctrl+D" bindingAlt=""/>
+        <item id="moveToCamera" binding="Ctrl+F" bindingAlt=""/>
+        <item id="interactivePlacement" binding="Ctrl+B" bindingAlt=""/>
+        <item id="createLightSource" binding="Ctrl+L" bindingAlt=""/>
+        <item id="replaceDialog" binding="Ctrl+W" bindingAlt=""/>
+        <item id="nodeShow" binding="Shift+H" bindingAlt=""/>
+        <item id="nodeHide" binding="Ctrl+H" bindingAlt=""/>
+        <item id="groupSelect" binding="Ctrl+G" bindingAlt=""/>
+        <item id="lockGroupSelect" binding="Ctrl+Shift+G" bindingAlt=""/>
+        <item id="terrainPickEditValue" binding="Ctrl+R" bindingAlt=""/>
+        <item id="componentReverse" binding="Ctrl+R" bindingAlt=""/>
+        <item id="terrainWireframe" binding="Ctrl+T" bindingAlt=""/>
+        <item id="terrainPickEditValueDetail" binding="Ctrl+Shift+R" bindingAlt=""/>
+        <item id="exitFPM" binding="Esc" bindingAlt=""/>
+        <item id="exitPMM" binding="Esc" bindingAlt=""/>
+        <item id="freezePMM" binding="Enter" bindingAlt=""/>
+        <item id="exitEditMode" binding="Esc" bindingAlt=""/>
+        <item id="switchEditMode" binding="Tab" bindingAlt=""/>
+        <item id="selectFrame" binding="F" bindingAlt=""/>
+        <item id="showWireframe" binding="4" bindingAlt=""/>
+        <item id="hideWireframe" binding="5" bindingAlt="6"/>
+        <item id="stitchSplineEndpoints" binding="S" bindingAlt=""/>
+        <item id="openCloseSpline" binding="O" bindingAlt=""/>
+        <item id="increaseTerrainRaidus" binding="B" bindingAlt=""/>
+        <item id="decreaseTerrainRaidus" binding="V" bindingAlt=""/>
+        <item id="increaseTerrainOpacity" binding="M" bindingAlt=""/>
+        <item id="decreaseTerrainOpacity" binding="N" bindingAlt=""/>
+        <item id="bakedRotSelectPos" binding="Home" bindingAlt=""/>
+        <item id="bakedRotSelectNeg" binding="End" bindingAlt=""/>
+        <item id="componentSwitchUp" binding="Right" bindingAlt=""/>
+        <item id="componentSwitchDown" binding="Left" bindingAlt=""/>
+        <item id="componentStart" binding="Up" bindingAlt=""/>
+        <item id="componentEnd" binding="Down" bindingAlt=""/>
+        <item id="componentInsert" binding="Insert" bindingAlt="Num Insert"/>
+        <item id="componentInsertShift" binding="Shift+Insert" bindingAlt="Shift+Num Insert"/>
+        <item id="toggleStats" binding="F8" bindingAlt=""/>
+        <item id="cameraTransScalePos" binding="+" bindingAlt="Num +"/>
+        <item id="cameraTransScaleNeg" binding="-" bindingAlt="Num -"/>
+        <item id="toggleViewportLocalMode" binding="`" bindingAlt=""/>
+        <item id="deleteObject" binding="Delete" bindingAlt="Num Delete"/>
+        <item id="deleteObjectShift" binding="Shift+Delete" bindingAlt="Shift+Num Delete"/>
+        <item id="interactivePlacementToggleAlign" binding="B" bindingAlt=""/>
+        <item id="interactivePlacementToggleScale" binding="S" bindingAlt=""/>
+        <item id="interactivePlacementToggleSelfAvoid" binding="C" bindingAlt=""/>
+        <item id="interactivePlacementToggleTerrainHeight" binding="T" bindingAlt=""/>
+        <item id="interactivePlacementToggleSplineSnapping" binding="V" bindingAlt=""/>
+        <item id="interactivePlacementToggleShowDistance" binding="D" bindingAlt=""/>
+        <item id="gizmoTranslate" binding="W" bindingAlt=""/>
+        <item id="gizmoRotate" binding="E" bindingAlt=""/>
+        <item id="gizmoScale" binding="R" bindingAlt=""/>
+        <item id="gizmoIncreaseSize" binding="Shift+O" bindingAlt=""/>
+        <item id="gizmoDecreaseSize" binding="Shift+P" bindingAlt=""/>
+        <item id="toggleStatsPrev" binding="Shift+F8" bindingAlt=""/>
+        <item id="resetTranslation" binding="Alt+G" bindingAlt=""/>
+        <item id="resetRotation" binding="Alt+R" bindingAlt=""/>
+        <item id="resetScale" binding="Alt+S" bindingAlt=""/>
+        <item id="setOriginToComponent" binding="Alt+P" bindingAlt=""/>
+        <item id="cycleViewportColors" binding="Alt+B" bindingAlt=""/>
+        <item id="raycastSingleComponentDown" binding="Page Down" bindingAlt=""/>
+        <item id="raycastSingleComponentUp" binding="Page Up" bindingAlt=""/>
+        <item id="raycastAllComponentsDown" binding="Shift+Page Down" bindingAlt=""/>
+        <item id="raycastAllComponentsUp" binding="Shift+Page Up" bindingAlt=""/>
+        <item id="toggleSoftShadows" binding="Alt+T" bindingAlt=""/>
+    </shortcuts>
+    <graphic>
+        <renderer>Vulkan</renderer>
+        <scalability>
+            <performanceClass>Ultra</performanceClass>
+            <postProcessAA>Off</postProcessAA>
+        </scalability>
+    </graphic>
+    <language language="0"/>
+    <snapping snapping_steps="0.100;1.000;15.000;" translation_step_size="1.000000" rotation_step_size="1.000000" scaling_step_size="1.000000"/>
+    <taa enable="false"/>
+    <changelog>
+        <hash></hash>
+        <line_count>0</line_count>
+    </changelog>
+    <primitives custom_primitives_path=""/>
+    <script debug="false" profile="false"/>
+</editor>

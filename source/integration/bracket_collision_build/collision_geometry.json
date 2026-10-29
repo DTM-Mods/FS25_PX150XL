@@ -1,0 +1,182 @@
+[
+  {
+    "source": "mountArmLeft",
+    "vertices": 62,
+    "triangles": 120,
+    "minimum": [
+      1.194,
+      -0.374,
+      -1.29
+    ],
+    "maximum": [
+      1.354,
+      0.218943,
+      -0.15
+    ]
+  },
+  {
+    "source": "mountArmRight",
+    "vertices": 62,
+    "triangles": 120,
+    "minimum": [
+      -1.354,
+      -0.374,
+      -1.29
+    ],
+    "maximum": [
+      -1.194,
+      0.218943,
+      -0.15
+    ]
+  },
+  {
+    "source": "mountCapLeft",
+    "vertices": 56,
+    "triangles": 108,
+    "minimum": [
+      1.179,
+      1.3,
+      -1.3
+    ],
+    "maximum": [
+      1.369,
+      1.35,
+      -1.12
+    ]
+  },
+  {
+    "source": "mountCapRight",
+    "vertices": 56,
+    "triangles": 108,
+    "minimum": [
+      -1.369,
+      1.3,
+      -1.3
+    ],
+    "maximum": [
+      -1.179,
+      1.35,
+      -1.12
+    ]
+  },
+  {
+    "source": "mountCheek0Left",
+    "vertices": 70,
+    "triangles": 136,
+    "minimum": [
+      1.1515,
+      -0.374,
+      -1.53
+    ],
+    "maximum": [
+      1.1765,
+      -0.064,
+      -1.23
+    ]
+  },
+  {
+    "source": "mountCheek0Right",
+    "vertices": 70,
+    "triangles": 136,
+    "minimum": [
+      -1.3965,
+      -0.374,
+      -1.53
+    ],
+    "maximum": [
+      -1.3715,
+      -0.064,
+      -1.23
+    ]
+  },
+  {
+    "source": "mountCheek1Left",
+    "vertices": 70,
+    "triangles": 136,
+    "minimum": [
+      1.3715,
+      -0.374,
+      -1.53
+    ],
+    "maximum": [
+      1.3965,
+      -0.064,
+      -1.23
+    ]
+  },
+  {
+    "source": "mountCheek1Right",
+    "vertices": 70,
+    "triangles": 136,
+    "minimum": [
+      -1.1765,
+      -0.374,
+      -1.53
+    ],
+    "maximum": [
+      -1.1515,
+      -0.064,
+      -1.23
+    ]
+  },
+  {
+    "source": "mountFloorLeft",
+    "vertices": 56,
+    "triangles": 108,
+    "minimum": [
+      1.164,
+      -0.374,
+      -1.53
+    ],
+    "maximum": [
+      1.384,
+      -0.344,
+      -1.23
+    ]
+  },
+  {
+    "source": "mountFloorRight",
+    "vertices": 56,
+    "triangles": 108,
+    "minimum": [
+      -1.384,
+      -0.374,
+      -1.53
+    ],
+    "maximum": [
+      -1.164,
+      -0.344,
+      -1.23
+    ]
+  },
+  {
+    "source": "mountPostLeft",
+    "vertices": 56,
+    "triangles": 108,
+    "minimum": [
+      1.194,
+      -0.024,
+      -1.29
+    ],
+    "maximum": [
+      1.354,
+      1.3,
+      -1.15
+    ]
+  },
+  {
+    "source": "mountPostRight",
+    "vertices": 56,
+    "triangles": 108,
+    "minimum": [
+      -1.354,
+      -0.024,
+      -1.29
+    ],
+    "maximum": [
+      -1.194,
+      1.3,
+      -1.15
+    ]
+  }
+]

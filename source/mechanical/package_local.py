@@ -16,11 +16,11 @@ def add(name,base=root):
  assert p.resolve().is_relative_to(root)
  files.add(p)
 add(v.find('storeData/image').text)
-for tree,base in [(v,root),(i,model.parent)]:
+for tree,base in [(d,root),(v,root),(i,model.parent)]:
  for e in tree.iter():
   for key in ['filename','textureFilename']:
    if e.get(key):add(e.get(key),base)
-assert all(p.suffix.lower() not in ['.md','.py','.blend','.lua'] for p in files)
+assert all(p.suffix.lower() not in ['.md','.py','.blend'] for p in files)
 out.parent.mkdir(parents=True,exist_ok=True);temp=out.with_name(out.name+'.tmp')
 with zipfile.ZipFile(temp,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
  for p in sorted(files):z.write(p,p.relative_to(root).as_posix())

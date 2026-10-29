@@ -1,0 +1,20 @@
+{
+  "black": [
+    "hitchPlate0",
+    "hitchPlate1",
+    "mountCheek0Left",
+    "mountCheek0Right",
+    "mountCheek1Left",
+    "mountCheek1Right",
+    "mountFloorLeft",
+    "mountFloorRight"
+  ],
+  "steel": [
+    "hitchPin",
+    "hitchPinHead",
+    "mountBoltLeft",
+    "mountBoltRight",
+    "mountKeeperLeft",
+    "mountKeeperRight"
+  ]
+}

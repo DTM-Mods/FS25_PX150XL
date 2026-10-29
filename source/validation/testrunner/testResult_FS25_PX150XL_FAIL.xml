@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testResult>
+    <metaData>
+        <version>0.9.23</version>
+        <builddate>2026-10-20 06:04:15</builddate>
+        <timeofexecution>2026-10-28 16:36:56</timeofexecution>
+        <executionduration>9.045 sec</executionduration>
+        <config>
+            <testdatapath>C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/MOD PROJECTS/FS25_PX150XL/source/mechanical/clearance_build/FS25_PX150XL</testdatapath>
+            <gamepath>G:/SteamLibrary/steamapps/common/Farming Simulator 25</gamepath>
+            <output>
+                <directory>C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/MOD PROJECTS/FS25_PX150XL/source/validation/testrunner</directory>
+                <formats>
+                    <format autoopenreport="False">XML</format>
+                    <format autoopenreport="True">HTML</format>
+                </formats>
+            </output>
+        </config>
+    </metaData>
+    <results testrunOutcome="FAIL">
+        <dataCollectorResults outcome="PASS" total="6" failed="0" succeeded="6" />
+        <moduleResults outcome="FAIL" total="15" failed="1" succeeded="14">
+            <testGroup name="DXTCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="MipMapCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="TextureCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="I3DCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="ModDescCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <descriptionExample name="DescBuilder">
+                <modDescriptionExample>
+                    <!--the following description is based on storeItems and some elements may be missing-->
+                    <!--the description is provided only as a help and may need adjustments to follow the guidelines-->
+                    <details>description en<description>&lt;en&gt;&lt;![CDATA[
+Category: Special Headers
+Price: $144,500
+Working width: 15.2m
+Working speed: 10 kph
+]]&gt;&lt;/en&gt;</description>
+                    </details>
+                    <details>description de<description>&lt;de&gt;&lt;![CDATA[
+Shopkategorie: Sonderschneidwerke
+Preis: 144.500€
+Arbeitsbreite: 15,2m
+Arbeitsgeschwindigkeit: 10 km/h
+]]&gt;&lt;/de&gt;</description>
+                    </details>
+                    <details>description fr<description>&lt;fr&gt;&lt;![CDATA[
+Catégorie: Barres de coupe spéciales
+Prix: 144 500€
+Largeur de travail: 15,2m
+Vitesse de travail: 10 km/h
+]]&gt;&lt;/fr&gt;</description>
+                    </details>
+                </modDescriptionExample>
+            </descriptionExample>
+            <testGroup name="PreFabCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="VehicleCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="PlaceableCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="MapCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="SlotCheck" passed="True">
+                <!--no problems found-->
+                <infos>
+                    <estimatedSlotUsage storeitem="FS25_PX150XL/px150xlWindrower.xml">14</estimatedSlotUsage>
+                </infos>
+            </testGroup>
+            <testGroup name="ObsoleteFiles" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="PublicLuaCheck" passed="False">
+                <faultyFile file="FS25_PX150XL/scripts/PX150LoweredClearance.lua">
+                    <violation>124:21: [pcall] pcall/xpcall swallows errors and hides them from the log</violation>
+                </faultyFile>
+            </testGroup>
+            <testGroup name="EditorCheck" passed="True">
+                <!--no problems found-->
+                <editorPath>C:/Program Files/GIANTS Software/GIANTS_Editor_10.0.14/editor.exe</editorPath>
+                <details>i3d Infos<i3DInfo>
+                        <file>FS25_PX150XL/px150xlWindrower.i3d</file>
+                        <info>total polycount of scene is at least 159,922 triangles</info>
+                    </i3DInfo>
+                </details>
+            </testGroup>
+            <testGroup name="ShaderCheckEditor" passed="True">
+                <!--no problems found-->
+                <editorPath>C:/Program Files/GIANTS Software/GIANTS_Editor_10.0.14/editor.exe</editorPath>
+                <!--This particular check is only relevant if you plan to release the mod on consoles.-->
+                <!--If the mod is meant to be released on PC only, you can ignore the warnings.-->
+            </testGroup>
+        </moduleResults>
+    </results>
+</testResult>

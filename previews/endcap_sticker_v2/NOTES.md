@@ -1,0 +1,1 @@
+2026-10-28 (Codex): PREVIEW ONLY. Separate surface-projected sticker layer on both end caps, orange for coverage review, independent material. Leaves model lettering strip and rear y>0.90m bare. Fits approved cap mesh via raycast; 4mm preview offset. No runtime source changes. Orange is a demonstration color; final in-game color configuration not implemented.

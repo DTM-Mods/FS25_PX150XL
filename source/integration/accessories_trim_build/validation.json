@@ -1,0 +1,11 @@
+{
+  "version": "2.4.0.0",
+  "shopOption": "Accessories and trim",
+  "price": 250,
+  "palette": "full native palette",
+  "targets": 23,
+  "protectedOtherMaterialSlots": 75,
+  "validation": "TestRunner ALL PASS; compiled GE red/blue/orange isolation PASS; hierarchy,skin targets and other vehicle settings preserved",
+  "inGame": "shop selection/save/reload not yet tested",
+  "packaged": false
+}

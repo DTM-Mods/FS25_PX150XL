@@ -1,0 +1,10 @@
+{
+  "version": "2.5.0.0",
+  "reference": "existing input-joint lower0.30m/offset10deg; calculated original native lowered cutterbar clearance for attached carrier",
+  "rearTargetMeters": 0.05,
+  "behavior": "one calibration after stationary attachment; paired lift and pitch; bounded native lift range, original settings retained if no solution; server-calculated and synced to clients",
+  "tests": "Lua5.1 numerical fit and mocked native-joint adapter PASS; front unchanged/rear5cm, native bounds, singular/unreachable fallback, temporary/live node isolation, join/reattach reference, network stream state, detach restoration. Yield regression PASS. GIANTS TestRunner ALL PASS incl Editor/Shader/PublicLua.",
+  "limitations": "NOT tested in running game or with physical M1240 joint. 4-6cm physical clearance and actual cutting require in-game validation; terrain changes after attachment are not continuously tracked.",
+  "unchanged": "runtime I3D/physics shapes, vehicle XML, trim materials, existing baseline lowering reference. Black socket/steel pin preview not integrated yet.",
+  "packaged": false
+}

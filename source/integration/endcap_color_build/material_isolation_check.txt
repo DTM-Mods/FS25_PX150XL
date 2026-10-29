@@ -1,0 +1,3 @@
+﻿PX150_SLOT_CHECK TARGET PX150XL_endCapSticker_left slot=px150_endCapSticker
+PX150_SLOT_CHECK TARGET PX150XL_endCapSticker_right slot=px150_endCapSticker
+PX150_SLOT_CHECK PASS: exactly 2 sticker slots; red/blue/orange changes left all 96 other material slots unchanged.

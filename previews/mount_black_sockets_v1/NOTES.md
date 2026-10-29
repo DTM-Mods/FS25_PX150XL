@@ -1,0 +1,1 @@
+2026-10-28 (Codex): PREVIEW ONLY. Lower socket cheeks/floors and upper hitch plates match main body black. Upper/lower pins, pin head and keeper clips use bare metallic steel. Legs/arms/caps/crossbar retain orange trim. Original reel discs stay black. Same rear-three-quarter camera as approved orange mount. Runtime not changed pending preview approval.

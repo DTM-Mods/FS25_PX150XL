@@ -1,0 +1,1 @@
+2026-10-28 (Codex): CORRECTED PREVIEW ONLY. User clarified lettering must retain BLACK background continued as a stripe to rear edge. Sticker covers surrounding cap, leaving black band z-0.5*y in[.485,.720] starting y=-.035 and continuing rearward without end crop. Model text remains over original black. Orange demonstration only. Both cap layers generated; runtime unchanged.
