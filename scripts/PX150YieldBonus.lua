@@ -1,5 +1,9 @@
--- Apply a fixed yield bonus only to this header's private converter records.
+-- Apply a fixed yield bonus to alfalfa and clover only, on this header's private
+-- converter records. Every other crop keeps the map's own factor.
 PX150YieldBonus = {}
+
+PX150YieldBonus.FACTOR = 1.15
+PX150YieldBonus.FRUITS = {ALFALFA=true, CLOVER=true}
 
 function PX150YieldBonus.prerequisitesPresent(specializations)
     return SpecializationUtil.hasSpecialization(Mower, specializations)
@@ -14,14 +18,19 @@ function PX150YieldBonus:onPostLoad(savegame)
     local converters = {}
 
     -- Mower.onLoad references the map's shared converter records. Copy each
-    -- record before changing its factor so other implements keep their yield.
+    -- boosted record before changing its factor so other implements keep their yield.
     for inputFruitType, converterData in pairs(spec.fruitTypeConverters) do
-        local copy = {}
-        for key, value in pairs(converterData) do
-            copy[key] = value
+        local fruitType = g_fruitTypeManager:getFruitTypeByIndex(inputFruitType)
+        if fruitType ~= nil and PX150YieldBonus.FRUITS[fruitType.name] then
+            local copy = {}
+            for key, value in pairs(converterData) do
+                copy[key] = value
+            end
+            copy.conversionFactor = converterData.conversionFactor * PX150YieldBonus.FACTOR
+            converters[inputFruitType] = copy
+        else
+            converters[inputFruitType] = converterData
         end
-        copy.conversionFactor = converterData.conversionFactor * 1.10
-        converters[inputFruitType] = copy
     end
 
     spec.fruitTypeConverters = converters

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <modDesc descVersion="115">
     <author>PropaineX</author>
-    <version>2.7.4.0</version>
+    <version>2.7.6.0</version>
     <title>
         <en>PX150 XL Windrower Pro Edition</en>
         <de>PX150 XL Schwadschneidwerk Pro Edition</de>
@@ -12,6 +12,13 @@
 Cuts every crop the map lists for grain headers. Crops with a map swath are laid as swaths; rye and triticale get their own swaths coloured like their grain; other grain header crops are laid as a grain row. Pick up with the MacDon PW8.
 Requires the MacDon Pack. Category: Special Headers.
 Price: $144,500. Working speed: 10 km/h. Required power: 45 kW.
+
+Changelog 2.7.6.0:
+- Alfalfa and clover yield bonus raised to 15%.
+- Fixed: rye and triticale swaths were about 4 times too big, giving far too much grain and straw and big heaps where the header stopped. They now match the wheat swath for their yield and get the same 25% PW8 bonus as wheat, barley and oat.
+
+Changelog 2.7.5.0:
+- The 10% yield bonus now applies only to alfalfa and clover. Other crops give the map's normal yield.
 
 Changelog 2.7.4.0:
 - Fixed: the PW8 straw for rye and triticale swaths now really loads (2.7.3.0 loaded it too early).
@@ -83,6 +90,13 @@ Changelog 2.1.0.0:
 Schneidet alle Fruechte, die die Karte fuer Getreideschneidwerke vorsieht. Fruechte mit Kartenschwad werden als Schwad abgelegt, Roggen und Triticale als eigene Schwade in Kornfarbe, andere als Kornreihe. Aufnahme mit dem MacDon PW8.
 Benoetigt das MacDon Pack. Kategorie: Sonderschneidwerke.
 Preis: 144.500 EUR. Arbeitsgeschwindigkeit: 10 km/h. Leistungsbedarf: 45 kW.
+
+Changelog 2.7.6.0:
+- Ertragsbonus fuer Luzerne und Klee auf 15% erhoeht.
+- Behoben: Roggen- und Triticaleschwad waren etwa 4-mal zu gross (viel zu viel Korn und Stroh, grosse Haufen beim Anhalten). Sie entsprechen jetzt dem Weizenschwad, passend zu ihrem Ertrag, mit demselben 25%-Bonus beim PW8 wie Weizen, Gerste und Hafer.
+
+Changelog 2.7.5.0:
+- Der Ertragsbonus von 10% gilt jetzt nur noch fuer Luzerne und Klee. Andere Fruechte bringen den normalen Kartenertrag.
 
 Changelog 2.7.4.0:
 - Behoben: Das PW8-Stroh fuer Roggen- und Triticaleschwad wird jetzt wirklich geladen (2.7.3.0 lud es zu frueh).

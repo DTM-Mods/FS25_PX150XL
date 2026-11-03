@@ -8,7 +8,7 @@ Current source: **2.5.2.0**. Working width: 15.2 m. Mass: 2.45 t.
 
 The lowered attachment height is set to **0.30 m**, with a **10 degree lower rotation offset**. The user confirmed this height works in game. The offset is not a measured angle relative to the ground.
 
-This header includes a fixed **10% swath yield bonus**, applied to its own copies of the map's supported crop conversion records. Other implements retain their existing factors. The bonus has passed Lua isolation and calculation tests; in-game yield testing is pending.
+This header includes a fixed **15% yield bonus on alfalfa and clover only** (alfalfa/clover only since 2.7.5.0, 15% since 2.7.6.0), applied to its own copies of those crops' conversion records; every other crop keeps the map's factor. Alfalfa and clover are only cut on maps that add them to the COMBINE_MOWER converter (for example NF Marsch). Other implements retain their existing factors. The bonus has passed Lua isolation and calculation tests; in-game yield testing is pending.
 
 ## Project contents
 

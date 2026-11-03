@@ -66,11 +66,87 @@ function G.closestMapSwath(grainColour)
     return best
 end
 
+-- The game links wheat, barley, oat, canola and soybean to their swaths in the crop
+-- files (windrow cutFillType + windrowCutFactor). Rye and triticale have no such link,
+-- so they were laid at straw volume and the PW8 counted every swath litre as grain:
+-- about 4x the grain and the straw. Measure what the game does for a linked crop and
+-- set the swath crop to the same, scaled by its grain yield against that crop.
+-- This also gives them the same pickup bonus as the linked crop.
+G.TEST_AREA = 10000
+G.REFERENCE_FRUIT = "WHEAT"
+
+local function positive(x)
+    return type(x) == "number" and x > 0 and x < math.huge
+end
+
+local function swathGrainPerLiter(swathFillTypeIndex)
+    local liters = g_fruitTypeManager:getCutWindrowHarvestFillLevel(swathFillTypeIndex, 1000)
+    return type(liters) == "number" and liters / 1000 or nil
+end
+
+-- The crop the game links to this swath, and its header (COMBINE_MOWER) factor.
+local function linkedCrop(swathFillTypeIndex)
+    local fallback, fallbackFactor
+    for fruitTypeIndex, converted in pairs(g_fruitTypeManager:getConverterDataByName("COMBINE_MOWER") or {}) do
+        if converted.fillTypeIndex == swathFillTypeIndex then
+            local desc = g_fruitTypeManager:getFruitTypeByIndex(fruitTypeIndex)
+            if desc ~= nil and desc.windrowCutFillType ~= nil and desc.windrowCutFillType.index == swathFillTypeIndex then
+                return fruitTypeIndex, converted.conversionFactor
+            end
+            fallback, fallbackFactor = fruitTypeIndex, converted.conversionFactor
+        end
+    end
+    return fallback, fallbackFactor
+end
+
+-- Header factor for laying this crop as dropFillTypeIndex and, for an own swath, the
+-- PW8 factor. nil when the game can't be measured: amounts are then left as before.
+function G.matchSwathAmounts(fruitTypeIndex, dropFillTypeIndex, isOwnSwath, pickupData)
+    local manager = g_fruitTypeManager
+    if manager.getFruitTypeAreaLiters == nil or manager.getCutWindrowHarvestFillLevel == nil then
+        return nil
+    end
+    local refSwath = dropFillTypeIndex
+    if isOwnSwath then
+        local ref = manager:getFruitTypeByName(G.REFERENCE_FRUIT)
+        refSwath = ref ~= nil and ref.windrowCutFillType ~= nil and ref.windrowCutFillType.index
+            or g_fillTypeManager:getFillTypeIndexByName(G.REFERENCE_FRUIT .. "_CUT")
+    end
+    local refFruitIndex, refHeaderFactor = linkedCrop(refSwath)
+    if refFruitIndex == nil then
+        return nil
+    end
+    local fruit, ref = manager:getFruitTypeByIndex(fruitTypeIndex), manager:getFruitTypeByIndex(refFruitIndex)
+    local refLaid = manager:getFruitTypeAreaLiters(refFruitIndex, G.TEST_AREA, true)
+    local fruitLaid = manager:getFruitTypeAreaLiters(fruitTypeIndex, G.TEST_AREA, true)
+    if not (positive(refLaid) and positive(fruitLaid) and positive(fruit.literPerSqm) and positive(ref.literPerSqm)) then
+        return nil
+    end
+    local refGrain = swathGrainPerLiter(refSwath)
+    local refPickup = pickupData ~= nil and pickupData[refSwath] ~= nil and pickupData[refSwath].conversionFactor or 1
+    local targetLaid = refLaid * (refHeaderFactor or 1) * fruit.literPerSqm / ref.literPerSqm
+    local headerFactor = targetLaid / fruitLaid
+    local pickupFactor, rawGrain
+    if isOwnSwath then
+        rawGrain = swathGrainPerLiter(dropFillTypeIndex)
+        if not (positive(refGrain) and positive(rawGrain)) then
+            return nil
+        end
+        pickupFactor = refGrain * refPickup / rawGrain
+    end
+    Logging.info("PX150XL: %s amounts matched to %s. Per test area: was %.0f L laid -> %.0f L grain; now %.0f L laid -> %.0f L grain (%s: %.0f L laid -> %.0f L grain). Header x%.3f, PW8 x%.3f",
+        fruit.name, ref.name, fruitLaid, fruitLaid * (rawGrain or refGrain or 0), targetLaid,
+        targetLaid * (refGrain or 0) * refPickup, ref.name, refLaid * (refHeaderFactor or 1),
+        refLaid * (refHeaderFactor or 1) * (refGrain or 0) * refPickup, headerFactor, pickupFactor or 1)
+    return headerFactor, pickupFactor
+end
+
 -- Decides once per map what each extra crop is laid as. Heap types are all
 -- registered by the time vehicles load, so this runs from the first header's onLoad.
 function G.resolveDrops()
     if G.drops ~= nil then return end
     G.drops = {}
+    G.headerFactors = {}
     local pickupConverter = g_fillTypeManager.converterNameToIndex["PICKUPHEADER_GRAIN"]
     local pickupData = g_fillTypeManager:getConverterDataByName("PICKUPHEADER_GRAIN")
     for fruitTypeIndex, grainFillTypeIndex in pairs(G.extraFruits) do
@@ -92,9 +168,20 @@ function G.resolveDrops()
         end
         if dropFillTypeIndex ~= nil then
             G.drops[fruitTypeIndex] = dropFillTypeIndex
+            local pickupFactor = 1
+            if dropFillTypeIndex ~= grainFillTypeIndex then
+                local headerFactor, ownPickupFactor = G.matchSwathAmounts(fruitTypeIndex, dropFillTypeIndex,
+                    dropFillTypeIndex == own, pickupData)
+                if headerFactor ~= nil then
+                    G.headerFactors[fruitTypeIndex] = headerFactor
+                    pickupFactor = ownPickupFactor or 1
+                else
+                    Logging.warning("PX150XL: could not measure swath amounts for %s; left unchanged", name)
+                end
+            end
             -- The pickup header reads this shared converter live while working.
             if pickupData ~= nil and pickupData[dropFillTypeIndex] == nil then
-                g_fillTypeManager:addFillTypeConversion(pickupConverter, dropFillTypeIndex, grainFillTypeIndex, 1)
+                g_fillTypeManager:addFillTypeConversion(pickupConverter, dropFillTypeIndex, grainFillTypeIndex, pickupFactor)
             end
         end
     end
@@ -114,7 +201,8 @@ function G:onLoad(savegame)
     G.resolveDrops()
     for fruitTypeIndex, fillTypeIndex in pairs(G.drops) do
         if spec.fruitTypeConverters[fruitTypeIndex] == nil then
-            spec.fruitTypeConverters[fruitTypeIndex] = {fillTypeIndex=fillTypeIndex, conversionFactor=1}
+            spec.fruitTypeConverters[fruitTypeIndex] = {fillTypeIndex=fillTypeIndex,
+                conversionFactor=G.headerFactors[fruitTypeIndex] or 1}
             if self.addAIFruitRequirement ~= nil then
                 local desc = g_fruitTypeManager:getFruitTypeByIndex(fruitTypeIndex)
                 self:addAIFruitRequirement(desc.index, desc.minHarvestingGrowthState, desc.maxHarvestingGrowthState)
