@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Rye and triticale swaths, tinted to match their grain (source/swaths/make_swath_textures.py).
+     Shape, physics and terrain settings copied from the base WHEAT_CUT swath. -->
+<map>
+    <fillTypes>
+        <fillType name="PX150_RYE_SWATH" title="$l10n_px150_ryeSwath" showOnPriceTable="false" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="0.84" maxPhysicalSurfaceAngle="50" />
+            <economy pricePerLiter="0.041" />
+            <effects prioritizedEffectType="ParticleEffect">
+                <alphaClip value="0.15" sharpness="0.1" gradientScale="0.1" alphaScale="1.0" beltAlphaScale="0.3"/>
+            </effects>
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_wheatCut.png" />
+            <textures diffuse="textures/ryeSwath_diffuse.dds" unitSize="2" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/wheatCut_normal.png"
+                      height="$data/fillPlanes/wheatCut_height.png"
+                      displacement="$data/fillPlanes/wheatCut_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance="textures/ryeSwathDistance_diffuse.dds" />
+        </fillType>
+        <fillType name="PX150_TRITICALE_SWATH" title="$l10n_px150_triticaleSwath" showOnPriceTable="false" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="0.84" maxPhysicalSurfaceAngle="50" />
+            <economy pricePerLiter="0.041" />
+            <effects prioritizedEffectType="ParticleEffect">
+                <alphaClip value="0.15" sharpness="0.1" gradientScale="0.1" alphaScale="1.0" beltAlphaScale="0.3"/>
+            </effects>
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_wheatCut.png" />
+            <textures diffuse="textures/triticaleSwath_diffuse.dds" unitSize="2" blendContrast="0.2" noiseScale="0.5" porosityAtZeroRoughness="0.9" porosityAtFullRoughness="1"
+                      normal="$data/fillPlanes/wheatCut_normal.png"
+                      height="$data/fillPlanes/wheatCut_height.png"
+                      displacement="$data/fillPlanes/wheatCut_displacement.png" displacementMaxHeight="0.2" firmness="0.3" viscosity="0.5"
+                      distance="textures/triticaleSwathDistance_diffuse.dds" />
+        </fillType>
+    </fillTypes>
+</map>

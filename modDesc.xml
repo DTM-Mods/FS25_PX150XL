@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <modDesc descVersion="115">
     <author>PropaineX</author>
-    <version>2.6.0.0</version>
+    <version>2.7.2.0</version>
     <title>
         <en>PX150 XL Windrower Pro Edition</en>
         <de>PX150 XL Schwadschneidwerk Pro Edition</de>
@@ -9,9 +9,19 @@
     <description>
         <en><![CDATA[PX150 XL Windrower Pro Edition by PropaineX.
 15.2 m grain windrower header for the MacDon M1240.
-Cuts every crop the map lists for grain headers. Crops with a map swath are laid as swaths; other grain header crops (e.g. rye, triticale) are laid as a grain row. Pick up with the MacDon PW8.
+Cuts every crop the map lists for grain headers. Crops with a map swath are laid as swaths; rye and triticale get their own swaths coloured like their grain; other grain header crops are laid as a grain row. Pick up with the MacDon PW8.
 Requires the MacDon Pack. Category: Special Headers.
 Price: $144,500. Working speed: 10 km/h. Required power: 45 kW.
+
+Changelog 2.7.2.0:
+- Darker, warmer rye swath.
+
+Changelog 2.7.1.0:
+- Rye and triticale swath textures now use the same format as the game's own swaths.
+
+Changelog 2.7.0.0:
+- Rye and triticale are laid as their own swaths, coloured to match their grain, and picked up with the PW8 as rye and triticale. On a map with no free swath slot they use the map swath closest in colour.
+- The header no longer stops cutting on small bumps.
 
 Changelog 2.6.0.0:
 - Cuts every crop the loaded map lists for grain headers, on any map. Crops with no map swath are laid as their own grain and can be picked up with the PW8.
@@ -64,9 +74,19 @@ Changelog 2.1.0.0:
 - New shop image and Pro Edition mod icon.]]></en>
         <de><![CDATA[PX150 XL Schwadschneidwerk Pro Edition von PropaineX.
 15,2 m Getreideschneidwerk fuer den MacDon M1240.
-Schneidet alle Fruechte, die die Karte fuer Getreideschneidwerke vorsieht. Fruechte mit Kartenschwad werden als Schwad abgelegt, andere (z. B. Roggen, Triticale) als Kornreihe. Aufnahme mit dem MacDon PW8.
+Schneidet alle Fruechte, die die Karte fuer Getreideschneidwerke vorsieht. Fruechte mit Kartenschwad werden als Schwad abgelegt, Roggen und Triticale als eigene Schwade in Kornfarbe, andere als Kornreihe. Aufnahme mit dem MacDon PW8.
 Benoetigt das MacDon Pack. Kategorie: Sonderschneidwerke.
 Preis: 144.500 EUR. Arbeitsgeschwindigkeit: 10 km/h. Leistungsbedarf: 45 kW.
+
+Changelog 2.7.2.0:
+- Dunklerer, waermerer Roggenschwad.
+
+Changelog 2.7.1.0:
+- Roggen- und Triticaleschwad-Texturen im selben Format wie die Schwade des Spiels.
+
+Changelog 2.7.0.0:
+- Roggen und Triticale werden als eigene Schwade in der Farbe ihres Korns abgelegt und mit dem PW8 als Roggen und Triticale aufgenommen. Hat die Karte keinen freien Schwadplatz, wird der farblich naechste Kartenschwad verwendet.
+- Das Schneidwerk hoert bei kleinen Bodenwellen nicht mehr auf zu schneiden.
 
 Changelog 2.6.0.0:
 - Schneidet auf jeder Karte alle Fruechte der Kategorie Getreideschneidwerk. Fruechte ohne Kartenschwad werden als Korn abgelegt und koennen mit dem PW8 aufgenommen werden.
@@ -117,7 +137,17 @@ Changelog 2.1.0.0:
     <dependencies>
         <dependency>pdlc_macDonPack</dependency>
     </dependencies>
+    <fillTypes filename="fillTypes/px150Swaths.xml" />
+    <densityMapHeightTypes filename="fillTypes/px150SwathHeights.xml" />
     <l10n>
+        <text name="px150_ryeSwath">
+            <en>Rye swath</en>
+            <de>Roggenschwad</de>
+        </text>
+        <text name="px150_triticaleSwath">
+            <en>Triticale swath</en>
+            <de>Triticaleschwad</de>
+        </text>
         <text name="px150_functionWindrower">
             <en>Cuts grain and lays a swath (MacDon M1240)</en>
         </text>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Ground heap settings copied from the base WHEAT_CUT swath. A map with no free slot skips these;
+     PX150GrainHeaderCrops then lays the closest-coloured map swath instead. -->
+<map>
+    <densityMapHeightTypes>
+        <densityMapHeightType fillTypeName="PX150_RYE_SWATH" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="PX150_TRITICALE_SWATH" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>
+    </densityMapHeightTypes>
+</map>

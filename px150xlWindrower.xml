@@ -61,7 +61,7 @@
         </inputAttacherJoints>
     </attachable>
     <groundReferenceNodes>
-        <groundReferenceNode node="cutGroundReference" threshold="0.25" />
+        <groundReferenceNode node="cutGroundReference" threshold="0.6" />
     </groundReferenceNodes>
     <workAreas>
         <workArea type="mower" functionName="processMowerArea" disableBackwards="true">

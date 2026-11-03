@@ -1,11 +1,13 @@
 {
-  "version": "2.6.0.0",
-  "destination": "C:\\Users\\groov\\OneDrive\\Documents\\My Games\\FarmingSimulator2025\\Testing_local\\FS25_PX150XL.zip",
-  "files": 11,
-  "bytes": 12231421,
-  "sha256": "d59a14937b8983c9412ee548b492300190f26fe79c7d1eb497f572e4a0397298",
+  "version": "2.7.2.0",
+  "destination": "C:\\Users\\groov\\OneDrive\\Documents\\My Games\\FarmingSimulator2025\\mods\\FS25_PX150XL.zip",
+  "files": 17,
+  "bytes": 14918011,
+  "sha256": "5a0a87426ce012236e2fef3ca61cceebb77b0defee1967fe239a4fcaf77e164f",
   "entries": [
     "brand_propainex.dds",
+    "fillTypes/px150SwathHeights.xml",
+    "fillTypes/px150Swaths.xml",
     "icon_px150xl.dds",
     "modDesc.xml",
     "px150xlWindrower.i3d",
@@ -15,7 +17,11 @@
     "scripts/PX150LoweredClearance.lua",
     "scripts/PX150ShopDisplay.lua",
     "scripts/PX150YieldBonus.lua",
-    "store_px150xl.dds"
+    "store_px150xl.dds",
+    "textures/ryeSwath_diffuse.dds",
+    "textures/ryeSwathDistance_diffuse.dds",
+    "textures/triticaleSwath_diffuse.dds",
+    "textures/triticaleSwathDistance_diffuse.dds"
   ],
   "validation": "CRC and every entry SHA-256 match source; forward slash paths; modDesc at root",
   "scope": "complete animated edited model, approved brackets/paint/branding and M1240 grain-swath mechanics"
