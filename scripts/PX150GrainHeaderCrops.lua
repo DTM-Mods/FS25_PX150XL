@@ -34,12 +34,13 @@ FruitTypeManager.loadMapData = Utils.appendedFunction(FruitTypeManager.loadMapDa
 end)
 
 -- The base pickup effects list only the base swaths; without this the PW8 shows no
--- straw going in for the rye and triticale swaths.
+-- straw going in for the rye and triticale swaths. Mod fill types load after the map's
+-- motion path effects, so the effect file is loaded once ours exist.
 G.modDirectory = g_currentModDirectory
 G.modName = g_currentModName
-MotionPathEffectManager.loadMapData = Utils.appendedFunction(MotionPathEffectManager.loadMapData, function(self)
-    if g_fillTypeManager:getFillTypeIndexByName("PX150_RYE_SWATH") ~= nil then
-        self:loadMotionPathEffectsXML("fillTypes/px150PickupEffects.xml", G.modDirectory, G.modName)
+FillTypeManager.loadModFillTypes = Utils.appendedFunction(FillTypeManager.loadModFillTypes, function(self)
+    if self:getFillTypeIndexByName("PX150_RYE_SWATH") ~= nil and g_motionPathEffectManager ~= nil then
+        g_motionPathEffectManager:loadMotionPathEffectsXML("fillTypes/px150PickupEffects.xml", G.modDirectory, G.modName)
     end
 end)
 
