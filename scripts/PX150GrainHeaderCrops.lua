@@ -33,6 +33,16 @@ FruitTypeManager.loadMapData = Utils.appendedFunction(FruitTypeManager.loadMapDa
     G.collectFromMap(self)
 end)
 
+-- The base pickup effects list only the base swaths; without this the PW8 shows no
+-- straw going in for the rye and triticale swaths.
+G.modDirectory = g_currentModDirectory
+G.modName = g_currentModName
+MotionPathEffectManager.loadMapData = Utils.appendedFunction(MotionPathEffectManager.loadMapData, function(self)
+    if g_fillTypeManager:getFillTypeIndexByName("PX150_RYE_SWATH") ~= nil then
+        self:loadMotionPathEffectsXML("fillTypes/px150PickupEffects.xml", G.modDirectory, G.modName)
+    end
+end)
+
 local function canLay(fillTypeIndex)
     return fillTypeIndex ~= nil and g_densityMapHeightManager:getDensityMapHeightTypeByFillTypeIndex(fillTypeIndex) ~= nil
 end

@@ -23,6 +23,7 @@ for tree,base in [(d,root),(v,root),(i,model.parent)]:
 if d.find('fillTypes') is not None:
  for t in E.parse(root/d.find('fillTypes').get('filename')).getroot().iter('textures'):
   for key in ['diffuse','normal','height','displacement','distance']:add(t.get(key))
+add('fillTypes/px150PickupEffects.xml')
 assert all(p.suffix.lower() not in ['.md','.py','.blend'] for p in files)
 out.parent.mkdir(parents=True,exist_ok=True);temp=out.with_name(out.name+'.tmp')
 with zipfile.ZipFile(temp,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
