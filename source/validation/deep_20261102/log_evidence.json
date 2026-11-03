@@ -1,0 +1,72 @@
+[
+  {
+    "file": "log.txt",
+    "line": 485,
+    "text": "2026-11-02 10:12:18.653 Error: Can't load resource 'C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/mods/FS25_PX150XL/dataS/scripts/vehicles/Vehicle.lua'."
+  },
+  {
+    "file": "log_2026-11-01_23-21-09.txt",
+    "line": 647,
+    "text": "2026-11-01 22:37:16.975 Error: Can't load resource 'C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/mods/FS25_PX150XL/dataS/scripts/vehicles/Vehicle.lua'."
+  },
+  {
+    "file": "log_2026-11-01_23-21-09.txt",
+    "line": 3675,
+    "text": "2026-11-01 22:39:10.590   Info: PX150 lowered clearance: original front 0.165 m retained; rear target 0.050 m; lower 0.2385 m / offset 16.085 deg."
+  },
+  {
+    "file": "log_2026-11-01_23-21-09.txt",
+    "line": 3676,
+    "text": "2026-11-01 22:39:10.591   Info: PX150 lowered clearance: original front 0.149 m retained; rear target 0.050 m; lower 0.2384 m / offset 16.054 deg."
+  },
+  {
+    "file": "log_2026-11-01_23-28-01.txt",
+    "line": 647,
+    "text": "2026-11-01 23:23:17.732 Error: Can't load resource 'C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/mods/FS25_PX150XL/dataS/scripts/vehicles/Vehicle.lua'."
+  },
+  {
+    "file": "log_2026-11-01_23-28-01.txt",
+    "line": 3673,
+    "text": "2026-11-01 23:25:15.775   Info: PX150 lowered clearance: original front 0.165 m retained; rear target 0.050 m; lower 0.2383 m / offset 16.101 deg."
+  },
+  {
+    "file": "log_2026-11-01_23-28-01.txt",
+    "line": 3674,
+    "text": "2026-11-01 23:25:15.775   Info: PX150 lowered clearance: original front 0.149 m retained; rear target 0.050 m; lower 0.2385 m / offset 16.046 deg."
+  },
+  {
+    "file": "log_2026-11-02_00-01-51.txt",
+    "line": 647,
+    "text": "2026-11-01 23:32:03.498 Error: Can't load resource 'C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/mods/FS25_PX150XL/dataS/scripts/vehicles/Vehicle.lua'."
+  },
+  {
+    "file": "log_2026-11-02_00-01-51.txt",
+    "line": 3670,
+    "text": "2026-11-01 23:33:47.523   Info: PX150 lowered clearance: original front 0.165 m retained; rear target 0.050 m; lower 0.2383 m / offset 16.100 deg."
+  },
+  {
+    "file": "log_2026-11-02_00-01-51.txt",
+    "line": 3671,
+    "text": "2026-11-01 23:33:47.523   Info: PX150 lowered clearance: original front 0.149 m retained; rear target 0.050 m; lower 0.2386 m / offset 16.040 deg."
+  },
+  {
+    "file": "log_2026-11-02_07-07-11.txt",
+    "line": 647,
+    "text": "2026-11-02 06:22:22.039 Error: Can't load resource 'C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/mods/FS25_PX150XL/dataS/scripts/vehicles/Vehicle.lua'."
+  },
+  {
+    "file": "log_2026-11-02_07-07-11.txt",
+    "line": 3671,
+    "text": "2026-11-02 06:24:38.806   Info: PX150 lowered clearance: original front 0.165 m retained; rear target 0.050 m; lower 0.2384 m / offset 16.087 deg."
+  },
+  {
+    "file": "log_2026-11-02_07-07-11.txt",
+    "line": 3672,
+    "text": "2026-11-02 06:24:38.806   Info: PX150 lowered clearance: original front 0.149 m retained; rear target 0.050 m; lower 0.2385 m / offset 16.050 deg."
+  },
+  {
+    "file": "log_2026-11-02_09-57-09.txt",
+    "line": 485,
+    "text": "2026-11-02 08:08:57.278 Error: Can't load resource 'C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/mods/FS25_PX150XL/dataS/scripts/vehicles/Vehicle.lua'."
+  }
+]

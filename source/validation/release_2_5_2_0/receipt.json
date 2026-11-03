@@ -1,0 +1,21 @@
+{
+  "version": "2.5.2.0",
+  "destination": "C:\\Users\\groov\\OneDrive\\Documents\\My Games\\FarmingSimulator2025\\Testing_local\\FS25_PX150XL.zip",
+  "bytes": 12230073,
+  "sha256": "e89fe6241d69e46a78f1f4b8eafafdc3c9376abd8804f848cbefaa2be224fa11",
+  "entries": [
+    "brand_propainex.dds",
+    "icon_px150xl.dds",
+    "modDesc.xml",
+    "px150xlWindrower.i3d",
+    "px150xlWindrower.i3d.shapes",
+    "px150xlWindrower.xml",
+    "scripts/PX150LoweredClearance.lua",
+    "scripts/PX150ShopDisplay.lua",
+    "scripts/PX150YieldBonus.lua",
+    "store_px150xl.dds"
+  ],
+  "checks": "XML/I3D/references/custom l10n/Lua51/native functions/network lifecycle/numerical fit/yield/diff/13 nonGUI TestRunner modules/finished ZIP CRC and all-entry SHA256 PASS",
+  "limitations": "2 GUI modules skipped; live multiplayer not tested",
+  "distribution": "Testing_local only; no installation or upload"
+}

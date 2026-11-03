@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testResult>
+    <metaData>
+        <version>0.9.23</version>
+        <builddate>2026-10-20 06:04:15</builddate>
+        <timeofexecution>2026-11-02 13:13:55</timeofexecution>
+        <executionduration>0.089 sec</executionduration>
+        <config>
+            <testdatapath>C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/MOD PROJECTS/FS25_PX150XL/source/validation/release_2_5_2_0/FS25_PX150XL</testdatapath>
+            <gamepath>G:/SteamLibrary/steamapps/common/Farming Simulator 25</gamepath>
+            <output>
+                <directory>C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/MOD PROJECTS/FS25_PX150XL/source/validation/release_2_5_2_0</directory>
+                <formats>
+                    <format autoopenreport="False">XML</format>
+                    <format autoopenreport="True">HTML</format>
+                </formats>
+            </output>
+        </config>
+    </metaData>
+    <results testrunOutcome="FAIL">
+        <dataCollectorResults outcome="FAIL" total="6" failed="1" succeeded="5">
+            <datacollectorinfo datacollector="XMLCollector" successful="False">
+                <filenotfound xmlfile="FS25_PX150XL/px150xlWindrower.xml">Unable to resolve path (file not found)
+	path: px150xlWindrower.i3d
+	basegame: G:/SteamLibrary/steamapps/common/Farming Simulator 25
+	rel_basepaths: ['C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/MOD PROJECTS/FS25_PX150XL/source/validation/release_2_5_2_0/FS25_PX150XL', 'C:/Users/groov/OneDrive/Documents/My Games/FarmingSimulator2025/MOD PROJECTS/FS25_PX150XL/source/validation/release_2_5_2_0/FS25_PX150XL', 'G:/SteamLibrary/steamapps/common/Farming Simulator 25/data']</filenotfound>
+            </datacollectorinfo>
+        </dataCollectorResults>
+        <moduleResults outcome="FAIL" total="15" failed="3" succeeded="12">
+            <testGroup name="DXTCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="MipMapCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="TextureCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="I3DCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="ModDescCheck" passed="False">
+                <nodatatocheck>
+                    <error>No valid ModDesc.xml found. Check XML Collector for parse errors.</error>
+                </nodatatocheck>
+            </testGroup>
+            <descriptionExample name="DescBuilder" />
+            <testGroup name="PreFabCheck" passed="False">
+                <nodatatocheck>
+                    <error>No valid prefabDesc.xml found. Check XML Collector for parse errors.</error>
+                </nodatatocheck>
+            </testGroup>
+            <testGroup name="VehicleCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="PlaceableCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="MapCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="SlotCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="ObsoleteFiles" passed="False">
+                <unusedFiles>
+                    <!--the following files seems to be unused/not referenced anywhere in the mod-->
+                    <!--ensure all parse errors are fixed before considering these errors-->
+                    <!--note that this list was automatically generated and might include files which are indeed used but were not detected properly-->
+                    <!--please report back any bugs / false positives, so we can improve on it-->
+                    <totalMemoryUsage>21.52 KB</totalMemoryUsage>
+                    <unusedFile file="FS25_PX150XL/px150xlWindrower.xml" size="21.52 KB" />
+                </unusedFiles>
+            </testGroup>
+            <testGroup name="PublicLuaCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="EditorCheck" passed="True">
+                <!--no problems found-->
+            </testGroup>
+            <testGroup name="ShaderCheckEditor" passed="True">
+                <!--no problems found-->
+                <!--This particular check is only relevant if you plan to release the mod on consoles.-->
+                <!--If the mod is meant to be released on PC only, you can ignore the warnings.-->
+            </testGroup>
+        </moduleResults>
+    </results>
+</testResult>

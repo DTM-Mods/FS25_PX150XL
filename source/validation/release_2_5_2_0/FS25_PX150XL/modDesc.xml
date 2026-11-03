@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modDesc descVersion="115">
+    <author>PropaineX</author>
+    <version>2.5.2.0</version>
+    <title>
+        <en>PX150 XL Windrower Pro Edition</en>
+        <de>PX150 XL Schwadschneidwerk Pro Edition</de>
+    </title>
+    <description>
+        <en><![CDATA[PX150 XL Windrower Pro Edition by PropaineX.
+15.2 m grain windrower header for the MacDon M1240.
+Cuts wheat, barley, oat, canola and soybean into swaths for pickup with the MacDon PW8. Additional crops depend on map support.
+Requires the MacDon Pack. Category: Special Headers.
+Price: $144,500. Working speed: 10 km/h. Required power: 45 kW.
+
+Changelog 2.5.2.0:
+- Corrected the base Vehicle.lua source path.
+- Clearance updates now apply only to their current attachment; stale multiplayer updates are ignored.
+
+Changelog 2.5.1.0:
+- Reduced mass to 2,450 kg.
+- Fixed showroom floor placement and physics stability.
+- Centered right-hand model lettering in the black stripe.
+- Added native MacDon Red to Accessories and trim and made it the default.
+
+Changelog 2.5.0.0:
+- Pins stay metallic steel; sockets and upper hitch follow Accessories and trim.
+- Lowered stance targets 5 cm rear socket clearance while retaining the original front cutting height.
+
+Changelog 2.4.0.0:
+- Accessories and trim color option now recolors both end-cap stickers and the complete custom MacDon attacher together, for $250.
+
+Changelog 2.3.0.0:
+- End cap color shop option with full native color palette; only the sticker changes color.
+
+Changelog 2.2.1.0:
+- Added ground collisions to the left and right rear brackets.
+
+Changelog 2.2.0.0:
+- Built-in 10% swath yield bonus for this header.
+
+Changelog 2.1.5.0:
+- Raised lowered attachment height to 0.30 m; pitch unchanged.
+
+Changelog 2.1.4.0:
+- Lowered attachment height set to 0.25 m for testing; pitch unchanged.
+
+Changelog 2.1.3.0:
+- Lowered header front tilted up 10 degrees and cutting height lowered.
+
+Changelog 2.1.2.0:
+- Square steel cross tube between the rear braces now supports the top hitch and PropaineX name.
+- Mass set to 2.95 t.
+
+Changelog 2.1.1.0:
+- Improved store picture angle, lighting and placement.
+
+Changelog 2.1.0.0:
+- Complete M1240 windrower conversion with central grain swath.
+- Edited animated header, custom brackets, dark paint and PropaineX/PX150XL branding.
+- New shop image and Pro Edition mod icon.]]></en>
+        <de><![CDATA[PX150 XL Schwadschneidwerk Pro Edition von PropaineX.
+15,2 m Getreideschneidwerk fuer den MacDon M1240.
+Legt Weizen, Gerste, Hafer, Raps und Sojabohnen im Schwad ab. Aufnahme mit dem MacDon PW8. Weitere Fruechte erfordern Kartenunterstuetzung.
+Benoetigt das MacDon Pack. Kategorie: Sonderschneidwerke.
+Preis: 144.500 EUR. Arbeitsgeschwindigkeit: 10 km/h. Leistungsbedarf: 45 kW.
+
+Changelog 2.5.2.0:
+- Pfad zur Vehicle.lua des Basisspiels korrigiert.
+- Abstandsanpassungen gelten nur fuer den aktuellen Anbau; veraltete Mehrspieler-Nachrichten werden ignoriert.
+
+Changelog 2.5.0.0:
+- Bolzen bleiben metallisch; Aufnahmen und oberer Anbaupunkt folgen der Zubehoerfarbe.
+- Abgesenkte Stellung mit 5 cm Abstand unter den hinteren Aufnahmen bei unveraenderter vorderer Schnitthoehe.
+
+Changelog 2.4.0.0:
+- Gemeinsame Farbwahl fuer Endkappenaufkleber und kompletten eigenen MacDon-Anbaurahmen fuer $250.
+
+Changelog 2.3.0.0:
+- Endkappenfarbe im Shop mit kompletter Standardfarbpalette; nur der Aufkleber wechselt die Farbe.
+
+Changelog 2.2.1.0:
+- Bodenkollisionen fuer linke und rechte hintere Halterung hinzugefuegt.
+
+Changelog 2.2.0.0:
+- Integrierter Schwadertragsbonus von 10% fuer dieses Schneidwerk.
+
+Changelog 2.1.5.0:
+- Raised lowered attachment height to 0.30 m; pitch unchanged.
+
+Changelog 2.1.4.0:
+- Lowered attachment height set to 0.25 m for testing; pitch unchanged.
+
+Changelog 2.1.3.0:
+- Abgesenktes Schneidwerk vorne um 10 Grad angehoben, Schnitthoehe abgesenkt.
+
+Changelog 2.1.2.0:
+- Vierkant-Stahlquerrohr zwischen den hinteren Streben stuetzt jetzt Oberlenkerbock und PropaineX-Schriftzug.
+- Gewicht auf 2,95 t gesetzt.
+
+Changelog 2.1.1.0:
+- Verbessertes Shopbild mit neuer Ansicht und Platzierung.
+
+Changelog 2.1.0.0:
+- Vollstaendiger M1240-Umbau mit zentraler Schwadablage.
+- Bearbeitetes animiertes Modell, eigene Halterungen, dunkle Lackierung und PropaineX/PX150XL-Beschriftung.
+- Neues Shopbild und Pro-Edition-Modsymbol.]]></de>
+    </description>
+    <iconFilename>icon_px150xl.dds</iconFilename>
+    <multiplayer supported="true" />
+    <dependencies>
+        <dependency>pdlc_macDonPack</dependency>
+    </dependencies>
+    <l10n>
+        <text name="px150_functionWindrower">
+            <en>Cuts grain and lays a swath (MacDon M1240)</en>
+        </text>
+        <text name="px150_turnOn">
+            <en>Turn on header</en>
+        </text>
+        <text name="px150_turnOff">
+            <en>Turn off header</en>
+        </text>
+        <text name="px150_accessoriesTrim">
+            <en>Accessories and trim</en>
+            <de>Zubehoer und Zierleisten</de>
+        </text>
+        <text name="px150_macDonRed">
+            <en>MacDon Red</en>
+            <de>MacDon Rot</de>
+        </text>
+        <text name="px150_endCapOrange">
+            <en>PropaineX orange</en>
+            <de>PropaineX Orange</de>
+        </text>
+    </l10n>
+    <brands>
+        <brand name="PROPAINEX" title="PropaineX" image="brand_propainex.dds" />
+    </brands>
+    <specializations>
+        <specialization name="yieldBonus" className="PX150YieldBonus" filename="scripts/PX150YieldBonus.lua" />
+        <specialization name="loweredClearance" className="PX150LoweredClearance" filename="scripts/PX150LoweredClearance.lua" />
+        <specialization name="shopDisplay" className="PX150ShopDisplay" filename="scripts/PX150ShopDisplay.lua" />
+    </specializations>
+    <vehicleTypes>
+        <type name="px150Windrower" parent="mower" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <specialization name="yieldBonus" />
+            <specialization name="loweredClearance" />
+            <specialization name="shopDisplay" />
+        </type>
+    </vehicleTypes>
+    <storeItems>
+        <storeItem xmlFilename="px150xlWindrower.xml" />
+    </storeItems>
+</modDesc>

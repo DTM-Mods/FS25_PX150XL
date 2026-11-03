@@ -11,7 +11,7 @@ function C.prerequisitesPresent(specializations)
 end
 
 function C.registerEventListeners(vehicleType)
-    for _, event in ipairs({'onLoad','onPostAttach','onPreDetach','onUpdate','onReadStream','onWriteStream'}) do
+    for _, event in ipairs({'onLoad','onPreAttach','onPostAttach','onPreDetach','onUpdate','onReadStream','onWriteStream'}) do
         SpecializationUtil.registerEventListener(vehicleType, event, C)
     end
 end
@@ -19,6 +19,7 @@ end
 function C:onLoad()
     local joint = self.spec_attachable.inputAttacherJoints[1]
     self.px150ClearanceReference = {distance=joint.lowerDistanceToGround,angle=joint.lowerRotationOffset}
+    self.px150ClearanceGeneration = 0
 end
 
 -- Bounded two-variable Newton fit with backtracking. The callback returns
@@ -54,7 +55,9 @@ end
 
 function C.apply(self, distance, angle)
     local data = self.px150Clearance
-    if data == nil then return end
+    if data == nil or data.carrier ~= self:getAttacherVehicle() then return end
+    local implement = data.carrier and data.carrier:getImplementByObject(self)
+    if implement == nil or implement.jointDescIndex ~= data.jointIndex then return end
     data.distance, data.angle = distance, angle
     local joint = self:getActiveInputAttacherJoint()
     if joint == nil then return end
@@ -70,15 +73,32 @@ function C.apply(self, distance, angle)
     end
 end
 
-function C:onPostAttach(carrier, inputIndex, jointIndex)
+-- Native Attachable raises onPreAttach before an optional smooth-attach delay.
+-- Count attachment starts, not completions, on both peers. Join streams seed
+-- this counter even when attachment reconstruction happens after our stream.
+function C:onPreAttach(carrier, inputIndex, jointIndex)
     local joint = self:getActiveInputAttacherJoint()
     if joint == nil then return end
-    local previous = self.px150Clearance
+    local pending = self.px150ClearancePending
+    self.px150ClearancePending = nil
+    local matching = pending and pending.carrier == carrier
+        and pending.inputIndex == inputIndex and pending.jointIndex == jointIndex
+    self.px150ClearanceGeneration = matching and pending.generation
+        or (self.px150ClearanceGeneration or 0)+1
     local reference = self.px150ClearanceReference or {distance=joint.lowerDistanceToGround,angle=joint.lowerRotationOffset}
-    self.px150Clearance = {carrier=carrier, jointIndex=jointIndex, elapsed=0,
+    self.px150Clearance = {carrier=carrier, inputIndex=inputIndex, jointIndex=jointIndex,
+        generation=self.px150ClearanceGeneration, elapsed=0,
         baseDistance=reference.distance, baseAngle=reference.angle}
-    if not self.isServer and previous and previous.distance then
-        C.apply(self,previous.distance,previous.angle)
+    if matching then
+        self.px150Clearance.distance,self.px150Clearance.angle = pending.distance,pending.angle
+    end
+end
+
+function C:onPostAttach(carrier, inputIndex, jointIndex)
+    local data = self.px150Clearance
+    if data and data.carrier == carrier and data.inputIndex == inputIndex
+        and data.jointIndex == jointIndex and data.distance then
+        C.apply(self,data.distance,data.angle)
     end
 end
 
@@ -89,6 +109,9 @@ function C:onPreDetach()
         joint.lowerDistanceToGround, joint.lowerRotationOffset = data.baseDistance,data.baseAngle
     end
     self.px150Clearance = nil
+    self.px150ClearancePending = nil
+    -- Invalidate packets immediately, including while native detach is running.
+    self.px150ClearanceGeneration = (self.px150ClearanceGeneration or 0)+1
 end
 
 function C.calibrate(self)
@@ -197,15 +220,39 @@ end
 
 function C:onWriteStream(streamId,connection)
     local data = self.px150Clearance
-    local fitted = data ~= nil and data.distance ~= nil
-    streamWriteBool(streamId,fitted)
-    if fitted then streamWriteFloat32(streamId,data.distance);streamWriteFloat32(streamId,data.angle) end
+    streamWriteInt32(streamId,self.px150ClearanceGeneration or 0)
+    streamWriteBool(streamId,data ~= nil)
+    if data ~= nil then
+        NetworkUtil.writeNodeObject(streamId,data.carrier)
+        streamWriteInt32(streamId,data.inputIndex)
+        streamWriteInt32(streamId,data.jointIndex)
+        streamWriteBool(streamId,data.distance ~= nil)
+        if data.distance ~= nil then
+            streamWriteFloat32(streamId,data.distance);streamWriteFloat32(streamId,data.angle)
+        end
+    end
 end
 
 function C:onReadStream(streamId,connection)
+    local generation = streamReadInt32(streamId)
+    self.px150ClearanceGeneration = generation
+    self.px150ClearancePending = nil
     if streamReadBool(streamId) then
-        self.px150Clearance = self.px150Clearance or {}
-        C.apply(self,streamReadFloat32(streamId),streamReadFloat32(streamId))
+        local incoming = {generation=generation,carrier=NetworkUtil.readNodeObject(streamId),
+            inputIndex=streamReadInt32(streamId),jointIndex=streamReadInt32(streamId)}
+        if streamReadBool(streamId) then
+            incoming.distance,incoming.angle = streamReadFloat32(streamId),streamReadFloat32(streamId)
+        end
+        local data = self.px150Clearance
+        if data and data.carrier == incoming.carrier and data.inputIndex == incoming.inputIndex
+            and data.jointIndex == incoming.jointIndex then
+            data.generation = generation
+            if incoming.distance then C.apply(self,incoming.distance,incoming.angle) end
+        elseif incoming.carrier ~= nil then
+            -- Only initial object streaming may wait for native attachment
+            -- reconstruction. Live fit events are never queued for later use.
+            self.px150ClearancePending = incoming
+        end
     end
 end
 
@@ -216,20 +263,33 @@ function PX150ClearanceEvent.emptyNew() return Event.new(PX150ClearanceEvent_mt)
 function PX150ClearanceEvent.new(vehicle,distance,angle)
     local self = PX150ClearanceEvent.emptyNew()
     self.vehicle,self.distance,self.angle = vehicle,distance,angle
+    local data = vehicle.px150Clearance
+    self.carrier,self.inputIndex,self.jointIndex,self.generation =
+        data.carrier,data.inputIndex,data.jointIndex,data.generation
     return self
 end
 function PX150ClearanceEvent:writeStream(streamId,connection)
     NetworkUtil.writeNodeObject(streamId,self.vehicle)
+    NetworkUtil.writeNodeObject(streamId,self.carrier)
+    streamWriteInt32(streamId,self.inputIndex);streamWriteInt32(streamId,self.jointIndex)
+    streamWriteInt32(streamId,self.generation)
     streamWriteFloat32(streamId,self.distance);streamWriteFloat32(streamId,self.angle)
 end
 function PX150ClearanceEvent:readStream(streamId,connection)
     self.vehicle = NetworkUtil.readNodeObject(streamId)
+    self.carrier = NetworkUtil.readNodeObject(streamId)
+    self.inputIndex,self.jointIndex = streamReadInt32(streamId),streamReadInt32(streamId)
+    self.generation = streamReadInt32(streamId)
     self.distance,self.angle = streamReadFloat32(streamId),streamReadFloat32(streamId)
     self:run(connection)
 end
 function PX150ClearanceEvent:run(connection)
     if connection:getIsServer() and self.vehicle ~= nil then
-        self.vehicle.px150Clearance = self.vehicle.px150Clearance or {}
-        C.apply(self.vehicle,self.distance,self.angle)
+        local data = self.vehicle.px150Clearance
+        if data and data.carrier == self.carrier and data.inputIndex == self.inputIndex
+            and data.jointIndex == self.jointIndex and data.generation == self.generation
+            and self.vehicle.px150ClearanceGeneration == self.generation then
+            C.apply(self.vehicle,self.distance,self.angle)
+        end
     end
 end

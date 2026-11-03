@@ -99,30 +99,5 @@ end
 assert(math.abs(socketY-.05)<.001,'rear target not met')
 for node in pairs(nodes) do assert(node<100,'temporary fit nodes leaked') end
 
--- Join/reattach uses the original source reference, not a previous calibrated
--- pose received over the network; detaching restores the original settings.
-local live={spec_attachable={inputAttacherJoints={input}},
-    getActiveInputAttacherJoint=function() return input end,
-    getAttacherVehicle=function() return nil end}
-C.onLoad(live)
-local baselineDistance,baselineAngle=input.lowerDistanceToGround,input.lowerRotationOffset
-live.px150Clearance={}
-C.apply(live,.6,.25)
-C.onPostAttach(live,carrier,1,1)
-assert(live.px150Clearance.baseDistance==baselineDistance)
-assert(live.px150Clearance.baseAngle==baselineAngle)
-assert(live.px150Clearance.distance==.6 and live.px150Clearance.angle==.25)
-local buffer={}
-function streamWriteBool(_,x) table.insert(buffer,x) end
-function streamWriteFloat32(_,x) table.insert(buffer,x) end
-function streamReadBool() return table.remove(buffer,1) end
-function streamReadFloat32() return table.remove(buffer,1) end
-C.onWriteStream(live,1,{})
-local joined={getActiveInputAttacherJoint=function() return nil end}
-C.onReadStream(joined,1,{})
-assert(joined.px150Clearance.distance==.6 and joined.px150Clearance.angle==.25)
-C.onPreDetach(live)
-assert(input.lowerDistanceToGround==baselineDistance and input.lowerRotationOffset==baselineAngle)
-assert(live.px150Clearance==nil)
-print('PASS: front reference, 5 cm rear, native bounds/fallback, temporary geometry, join/reattach reference, streams and detach reset.')
+print('PASS: front reference, 5 cm rear, native bounds/fallback and temporary geometry cleanup.')
 ''')

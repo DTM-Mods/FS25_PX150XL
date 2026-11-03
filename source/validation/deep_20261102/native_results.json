@@ -1,0 +1,33 @@
+{
+  "lua51_syntax": "All three runtime scripts compile and load with engine globals stubbed",
+  "native_mower": "PASS: server/near-client native 10% calculation, shared isolation, distant-client guard; native 1000 L cap reproduced",
+  "shop_and_network": "PASS showroom guard/static preservation, client-origin rejection and detached server-event rejection (updated after source fix)",
+  "native_attachment": "PASS: actual native lower-alpha mapping and rotation offset consume fitted values; frame marked invalid for native refresh (physics boundary stubbed)",
+  "mappings": "PASS 109 unique mappings resolve into current I3D",
+  "references": "PASS explicit filename/texture/external-shapes/image attributes including loose $data assets",
+  "installed_identity": {
+    "files": 10,
+    "sha256": "7f199f478980b7b1c380c94d0c2ad393c4fd6dd79b5bf17401ea95931259b044",
+    "all_entries_equal_source": false,
+    "source_differences": [
+      "modDesc.xml",
+      "scripts/PX150LoweredClearance.lua"
+    ]
+  },
+  "animation_discontinuities": [
+    {
+      "node": "canolaKnifesRight01",
+      "time": "0.5",
+      "end": "0 0 -0.085",
+      "next_start": "0 0 -0.058",
+      "same_as_base_game": true
+    },
+    {
+      "node": "canolaKnifesRight02",
+      "time": "0.5",
+      "end": "0 0 0.085",
+      "next_start": "0 0 0.058",
+      "same_as_base_game": true
+    }
+  ]
+}

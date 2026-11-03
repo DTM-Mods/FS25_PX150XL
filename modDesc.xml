@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <modDesc descVersion="115">
     <author>PropaineX</author>
-    <version>2.5.1.0</version>
+    <version>2.6.0.0</version>
     <title>
         <en>PX150 XL Windrower Pro Edition</en>
         <de>PX150 XL Schwadschneidwerk Pro Edition</de>
@@ -9,9 +9,16 @@
     <description>
         <en><![CDATA[PX150 XL Windrower Pro Edition by PropaineX.
 15.2 m grain windrower header for the MacDon M1240.
-Cuts wheat, barley, oat, canola and soybean into swaths for pickup with the MacDon PW8. Additional crops depend on map support.
+Cuts every crop the map lists for grain headers. Crops with a map swath are laid as swaths; other grain header crops (e.g. rye, triticale) are laid as a grain row. Pick up with the MacDon PW8.
 Requires the MacDon Pack. Category: Special Headers.
 Price: $144,500. Working speed: 10 km/h. Required power: 45 kW.
+
+Changelog 2.6.0.0:
+- Cuts every crop the loaded map lists for grain headers, on any map. Crops with no map swath are laid as their own grain and can be picked up with the PW8.
+
+Changelog 2.5.2.0:
+- Corrected the base Vehicle.lua source path.
+- Clearance updates now apply only to their current attachment; stale multiplayer updates are ignored.
 
 Changelog 2.5.1.0:
 - Reduced mass to 2,450 kg.
@@ -57,9 +64,16 @@ Changelog 2.1.0.0:
 - New shop image and Pro Edition mod icon.]]></en>
         <de><![CDATA[PX150 XL Schwadschneidwerk Pro Edition von PropaineX.
 15,2 m Getreideschneidwerk fuer den MacDon M1240.
-Legt Weizen, Gerste, Hafer, Raps und Sojabohnen im Schwad ab. Aufnahme mit dem MacDon PW8. Weitere Fruechte erfordern Kartenunterstuetzung.
+Schneidet alle Fruechte, die die Karte fuer Getreideschneidwerke vorsieht. Fruechte mit Kartenschwad werden als Schwad abgelegt, andere (z. B. Roggen, Triticale) als Kornreihe. Aufnahme mit dem MacDon PW8.
 Benoetigt das MacDon Pack. Kategorie: Sonderschneidwerke.
 Preis: 144.500 EUR. Arbeitsgeschwindigkeit: 10 km/h. Leistungsbedarf: 45 kW.
+
+Changelog 2.6.0.0:
+- Schneidet auf jeder Karte alle Fruechte der Kategorie Getreideschneidwerk. Fruechte ohne Kartenschwad werden als Korn abgelegt und koennen mit dem PW8 aufgenommen werden.
+
+Changelog 2.5.2.0:
+- Pfad zur Vehicle.lua des Basisspiels korrigiert.
+- Abstandsanpassungen gelten nur fuer den aktuellen Anbau; veraltete Mehrspieler-Nachrichten werden ignoriert.
 
 Changelog 2.5.0.0:
 - Bolzen bleiben metallisch; Aufnahmen und oberer Anbaupunkt folgen der Zubehoerfarbe.
@@ -131,11 +145,13 @@ Changelog 2.1.0.0:
     </brands>
     <specializations>
         <specialization name="yieldBonus" className="PX150YieldBonus" filename="scripts/PX150YieldBonus.lua" />
+        <specialization name="grainHeaderCrops" className="PX150GrainHeaderCrops" filename="scripts/PX150GrainHeaderCrops.lua" />
         <specialization name="loweredClearance" className="PX150LoweredClearance" filename="scripts/PX150LoweredClearance.lua" />
         <specialization name="shopDisplay" className="PX150ShopDisplay" filename="scripts/PX150ShopDisplay.lua" />
     </specializations>
     <vehicleTypes>
-        <type name="px150Windrower" parent="mower">
+        <type name="px150Windrower" parent="mower" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <specialization name="grainHeaderCrops" />
             <specialization name="yieldBonus" />
             <specialization name="loweredClearance" />
             <specialization name="shopDisplay" />
