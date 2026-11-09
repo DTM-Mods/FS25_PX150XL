@@ -178,6 +178,16 @@ function G.resolveDrops()
                 else
                     Logging.warning("PX150XL: could not measure swath amounts for %s; left unchanged", name)
                 end
+            elseif g_fruitTypeManager.getFruitTypeAreaLiters ~= nil then
+                -- Laid as its own grain: the mower drops windrow litres, but the pickup
+                -- counts every litre as grain. Scale the drop down to the grain amount.
+                local laid = g_fruitTypeManager:getFruitTypeAreaLiters(fruitTypeIndex, G.TEST_AREA, true)
+                local grain = g_fruitTypeManager:getFruitTypeAreaLiters(fruitTypeIndex, G.TEST_AREA, false)
+                if positive(laid) and positive(grain) and grain < laid then
+                    G.headerFactors[fruitTypeIndex] = grain / laid
+                    Logging.info("PX150XL: %s grain row matched to grain yield. Per test area: was %.0f L laid, now %.0f L. Header x%.3f",
+                        name, laid, grain, grain / laid)
+                end
             end
             -- The pickup header reads this shared converter live while working.
             if pickupData ~= nil and pickupData[dropFillTypeIndex] == nil then
@@ -208,5 +218,44 @@ function G:onLoad(savegame)
                 self:addAIFruitRequirement(desc.index, desc.minHarvestingGrowthState, desc.maxHarvestingGrowthState)
             end
         end
+    end
+end
+
+-- Shop crop list: every crop this header cuts on the loaded map, i.e. the map's
+-- grain-header crops plus every crop in its COMBINE_MOWER list (e.g. alfalfa, clover).
+-- storeData/specs/fruitTypeCategories=grainHeader makes the game create the list;
+-- this adds the mower crops to it.
+function G.getShopFillTypes(fillTypes)
+    local result, seen = {}, {}
+    local function add(fillTypeIndex)
+        if fillTypeIndex ~= nil and not seen[fillTypeIndex] then
+            seen[fillTypeIndex] = true
+            table.insert(result, fillTypeIndex)
+        end
+    end
+    for _, fillTypeIndex in ipairs(fillTypes or {}) do
+        add(fillTypeIndex)
+    end
+    local manager = g_fruitTypeManager
+    local mowerFruits = {}
+    for fruitTypeIndex, _ in pairs(manager:getConverterDataByName("COMBINE_MOWER") or {}) do
+        table.insert(mowerFruits, fruitTypeIndex)
+    end
+    table.sort(mowerFruits)
+    for _, fruitTypeIndex in ipairs(mowerFruits) do
+        add(manager:getFillTypeIndexByFruitTypeIndex(fruitTypeIndex))
+    end
+    return result
+end
+
+if FillUnit ~= nil and FillUnit.getSpecValueFillTypes ~= nil then
+    local original = FillUnit.getSpecValueFillTypes
+    FillUnit.getSpecValueFillTypes = function(storeItem, realItem, configurations, ...)
+        local fillTypes = original(storeItem, realItem, configurations, ...)
+        if storeItem ~= nil and storeItem.xmlFilename ~= nil and G.modDirectory ~= nil
+            and storeItem.xmlFilename:lower() == (G.modDirectory .. "px150xlWindrower.xml"):lower() then
+            return G.getShopFillTypes(fillTypes)
+        end
+        return fillTypes
     end
 end

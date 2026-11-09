@@ -5,6 +5,7 @@
         <name>PX150XL Windrower</name>
         <specs>
             <workingWidth>15.2</workingWidth>
+            <fruitTypeCategories>grainHeader</fruitTypeCategories>
         </specs>
         <functions>
             <function>$l10n_px150_functionWindrower</function>
