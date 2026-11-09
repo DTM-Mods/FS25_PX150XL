@@ -1,9 +1,9 @@
--- Apply a fixed yield bonus to alfalfa and clover only, on this header's private
+-- Apply a fixed yield bonus to alfalfa, clover and field grass only, on this header's private
 -- converter records. Every other crop keeps the map's own factor.
 PX150YieldBonus = {}
 
-PX150YieldBonus.FACTOR = 1.15
-PX150YieldBonus.FRUITS = {ALFALFA=true, CLOVER=true}
+PX150YieldBonus.FACTOR = 1.25
+PX150YieldBonus.FRUITS = {ALFALFA=true, CLOVER=true, FIELDGRASS=true}
 
 function PX150YieldBonus.prerequisitesPresent(specializations)
     return SpecializationUtil.hasSpecialization(Mower, specializations)
