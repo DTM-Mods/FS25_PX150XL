@@ -40,6 +40,12 @@ A 15.2 m windrower header for the MacDon M1240, by PropaineX. **Requires the Mac
 
 Download `FS25_PX150XL.zip` from the [latest release](https://github.com/DTM-Mods/FS25_PX150XL/releases/latest) and put it in `Documents/My Games/FarmingSimulator2025/mods`, without unzipping or renaming it. In multiplayer, the server and every player need the same version.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/license.jpg" alt="License" width="100%">
+</p>
+
+MIT, see [LICENSE](LICENSE). Anything here that comes from Farming Simulator 25 or its DLC (models, textures, sounds and other game files) belongs to GIANTS Software and is not covered by it.
+
 <details>
 <summary><b>For developers</b>: files, building and tests</summary>
 
