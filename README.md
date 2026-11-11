@@ -1,4 +1,31 @@
-# PX150 XL Windrower Pro Edition
+<p align="center">
+  <a href="https://github.com/DTM-Mods"><img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/dtm-header.jpg" alt="DTM Mods by PropaineX & Fennell" width="100%"></a>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/icons/FS25_PX150XL.png" alt="PX150 XL Windrower Pro Edition icon" width="128">
+</p>
+
+<h1 align="center">PX150 XL Windrower Pro Edition</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Farming%20Simulator-25-2E6B4F" alt="Farming Simulator 25">
+  <a href="https://github.com/DTM-Mods/FS25_PX150XL/releases/latest"><img src="https://img.shields.io/github/v/release/DTM-Mods/FS25_PX150XL?label=version&color=D9A441" alt="Latest version"></a>
+  <a href="https://github.com/DTM-Mods"><img src="https://img.shields.io/badge/DTM-Mods-143326" alt="DTM Mods"></a>
+</p>
+
+<p align="center">
+  <b>A 15.2 m windrower header for the MacDon M1240.</b><br>
+  <sub>by PropaineX</sub>
+</p>
+
+<p align="center">
+  <a href="https://github.com/DTM-Mods/FS25_PX150XL/releases/latest"><img src="https://img.shields.io/badge/Download-latest%20release-D9A441?style=for-the-badge&logo=github&logoColor=143326&labelColor=E9C77A" alt="Download the latest release"></a>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/features.jpg" alt="Features" width="100%">
+</p>
 
 Farming Simulator 25 windrower project by PropaineX, for the MacDon M1240. Requires the MacDon Pack.
 
@@ -31,3 +58,10 @@ Workflow terminology: "build it" approves and integrates changes into the workin
 Lowered clearance (2.5.0.0): the existing 0.30 m / 10-degree configuration remains the reference for the front cutting height. A server-side fit adjusts native lift and pitch together for a 5 cm lowest rear-socket target on the attachment terrain, using temporary copies of the current carrier joint geometry. This runs once after stationary attachment, retains the original setup if no bounded solution exists, and does not continuously track changing terrain. Numerical/lifecycle tests and GIANTS TestRunner pass; physical M1240 behavior and actual clearance still require in-game testing.
 
 Local testing ZIP: 2.5.1.0, 10 runtime files. Includes 2,450 kg mass, showroom placement/stability correction, centered right-end lettering and native MacDon Red default/palette entry. GIANTS TestRunner passes all modules, including EditorCheck and ShaderCheckEditor. ZIP CRC and every entry SHA-256 match source. Physical lowered-clearance and showroom behavior still require in-game verification.
+
+---
+
+<p align="center">
+  <a href="https://github.com/DTM-Mods"><img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/dtm-intro.gif" alt="DTM Mods by PropaineX & Fennell" width="420"></a><br>
+  <sub>Part of <a href="https://github.com/DTM-Mods">DTM Mods</a> (Dead To Me) by PropaineX & Fennell</sub>
+</p>
