@@ -37,7 +37,9 @@ The lowered attachment height is set to **0.30 m**, with a **10 degree lower rot
 
 This header includes a fixed **25% yield bonus on alfalfa, clover and field grass only** (alfalfa/clover only since 2.7.5.0, 15% since 2.7.6.0, field grass added and 25% since 2.8.2.0), applied to its own copies of those crops' conversion records; every other crop keeps the map's factor. Field grass gets the bonus on top of its grain-row amount. Alfalfa and clover are only cut on maps that add them to the COMBINE_MOWER converter (for example NF Marsch). Other implements retain their existing factors. The bonus has passed Lua isolation and calculation tests; in-game yield testing is pending.
 
-## Project contents
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/files.jpg" alt="Files" width="100%">
+</p>
 
 - Root XML, I3D and DDS files: runtime files and preserved header references.
 - `source/`: build tools, integration work, mechanical snapshots and validation reports.
@@ -45,7 +47,9 @@ This header includes a fixed **25% yield bonus on alfalfa, clover and field gras
 - `Bracket_Information/`: mount-kit references and scripts.
 - `MECHANICAL_STATUS.md`: detailed project and test history.
 
-## Packaging
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/for-developers.jpg" alt="For developers" width="100%">
+</p>
 
 Run `python source/mechanical/package_local.py` to build `FS25_PX150XL.zip` in the sibling profile's `Testing_local` folder. The script collects runtime dependencies and verifies archive integrity and each file against the source. It excludes development files from the ZIP.
 
