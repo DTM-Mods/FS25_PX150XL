@@ -53,9 +53,9 @@ MIT, see [LICENSE](LICENSE). Anything here that comes from Farming Simulator 25 
 
 Farming Simulator 25 windrower project by PropaineX, for the MacDon M1240. Requires the MacDon Pack.
 
-Current source: **2.5.2.0**. Working width: 15.2 m. Mass: 2.45 t.
+Current version: **2.8.2.0** (the version is in `modDesc.xml`; the notes below are the history of earlier versions). Working width: 15.2 m. Mass: 2.45 t.
 
-2.5.2.0 corrects the base Vehicle.lua source path and binds multiplayer clearance updates to the current attachment. Offline network lifecycle, native-function and numerical tests pass; live multiplayer remains unverified. Built to Testing_local/FS25_PX150XL.zip only; all 10 runtime entries verified against source, ZIP CRC/layout passed, and all 13 non-GUI TestRunner modules passed (2 GUI modules skipped).
+2.5.2.0 corrected the base Vehicle.lua source path and binds multiplayer clearance updates to the current attachment. Offline network lifecycle, native-function and numerical tests pass; live multiplayer remains unverified. Built to Testing_local/FS25_PX150XL.zip only; all 10 runtime entries verified against source, ZIP CRC/layout passed, and all 13 non-GUI TestRunner modules passed (2 GUI modules skipped).
 
 The lowered attachment height is set to **0.30 m**, with a **10 degree lower rotation offset**. The user confirmed this height works in game. The offset is not a measured angle relative to the ground.
 
