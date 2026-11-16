@@ -1,9 +1,9 @@
 {
-  "version": "2.7.6.0",
+  "version": "2.9.0.0",
   "destination": "C:\\Users\\groov\\OneDrive\\Documents\\My Games\\FarmingSimulator2025\\Testing_local\\FS25_PX150XL.zip",
   "files": 18,
-  "bytes": 14921035,
-  "sha256": "140fb6d068954b91f2b3d0cb92c9c64458f4d2654bf572b13d9cc5b8907235d1",
+  "bytes": 14922120,
+  "sha256": "e4fc6558bf3063807c99d32c6a3dd24b30edae4f4ae6e3b7172364ef7f5fd2ae",
   "entries": [
     "brand_propainex.dds",
     "fillTypes/px150PickupEffects.xml",

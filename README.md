@@ -30,7 +30,7 @@
 A 15.2 m windrower header for the MacDon M1240, by PropaineX. **Requires the MacDon Pack.**
 
 - 15.2 m working width, 2.45 t
-- **25% more yield on alfalfa, clover and field grass**; every other crop keeps the map's normal amount. Alfalfa and clover can only be cut on maps that let a windrower cut them (for example NF Marsch).
+- **25% more yield on alfalfa, clover and field grass, and on every crop whose combine leaves no straw on the map** (for example soybean, canola, sorghum); crops that leave straw keep the map's normal amount. Alfalfa and clover can only be cut on maps that let a windrower cut them (for example NF Marsch).
 - Sits low when lowered (0.30 m) for a clean cut. When you attach it standing still, it is fitted to the ground once so the rear sits just above it.
 - Shop color option ($250): the end-cap stickers and the mounting bracket in any color. Default MacDon Red; PropaineX orange is in the list too.
 
@@ -53,7 +53,7 @@ MIT, see [LICENSE](LICENSE). Anything here that comes from Farming Simulator 25 
 
 Farming Simulator 25 windrower project by PropaineX, for the MacDon M1240. Requires the MacDon Pack.
 
-Current version: **2.8.2.1** (the version is in `modDesc.xml`; the notes below are the history of earlier versions). Working width: 15.2 m. Mass: 2.45 t.
+Current version: **2.9.0.0** (the version is in `modDesc.xml`; the notes below are the history of earlier versions). Working width: 15.2 m. Mass: 2.45 t.
 
 2.5.2.0 corrected the base Vehicle.lua source path and binds multiplayer clearance updates to the current attachment. Offline network lifecycle, native-function and numerical tests pass; live multiplayer remains unverified. Built to Testing_local/FS25_PX150XL.zip only; all 10 runtime entries verified against source, ZIP CRC/layout passed, and all 13 non-GUI TestRunner modules passed (2 GUI modules skipped).
 
