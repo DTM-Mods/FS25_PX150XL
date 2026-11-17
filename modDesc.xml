@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <modDesc descVersion="115">
     <author>DTM Mods, PropaineX</author>
-    <version>2.9.0.0</version>
+    <version>2.9.0.1</version>
     <title>
         <en>PX150 XL Windrower Pro Edition</en>
         <de>PX150 XL Schwadschneidwerk Pro Edition</de>
@@ -12,6 +12,10 @@
 Cuts every crop the map lists for grain headers. Crops with a map swath are laid as swaths; rye and triticale get their own swaths coloured like their grain; other grain header crops are laid as a grain row. Pick up with the MacDon PW8.
 Requires the MacDon Pack. Category: Special Headers.
 Price: $144,500. Working speed: 10 km/h. Required power: 45 kW.
+
+Changelog 2.9.0.1:
+- Meets the GIANTS ModHub checks (TestRunner): textures, icon and modDesc brought up to date.
+- Smaller download: the unused copy of the John Deere HD50F header and its textures is no longer in the mod (the header uses the game's own textures, as before).
 
 Changelog 2.9.0.0:
 - 25% yield bonus on every crop whose combine leaves no swath on the map (for example soybean, canola, sorghum), the same as alfalfa, clover and field grass.
@@ -102,6 +106,10 @@ Changelog 2.1.0.0:
 Schneidet alle Fruechte, die die Karte fuer Getreideschneidwerke vorsieht. Fruechte mit Kartenschwad werden als Schwad abgelegt, Roggen und Triticale als eigene Schwade in Kornfarbe, andere als Kornreihe. Aufnahme mit dem MacDon PW8.
 Benoetigt das MacDon Pack. Kategorie: Sonderschneidwerke.
 Preis: 144.500 EUR. Arbeitsgeschwindigkeit: 10 km/h. Leistungsbedarf: 45 kW.
+
+Changelog 2.9.0.1:
+- Erfuellt die GIANTS-ModHub-Pruefungen (TestRunner): Texturen, Icon und modDesc aktualisiert.
+- Kleinerer Download: Die ungenutzte Kopie des John-Deere-HD50F-Schneidwerks und seiner Texturen ist nicht mehr im Mod (das Schneidwerk nutzt wie bisher die Texturen des Spiels).
 
 Changelog 2.9.0.0:
 - 25% Ertragsbonus auf alle Fruechte, bei denen der Maehdrescher auf der Karte kein Schwad ablegt (z. B. Sojabohnen, Raps, Sorghum), wie bei Luzerne, Klee und Feldgras.

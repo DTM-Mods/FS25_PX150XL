@@ -1,0 +1,11 @@
+# Files that stay in the repository but never go into the mod zip (see DTM-Mods/.github ci/README.md)
+
+# working copy of the base-game John Deere HD50F header (see HEADER_SOURCE.md); the mod's own
+# px150xlWindrower.xml/.i3d don't use it and take the John Deere textures from $data/vehicles/johnDeere/
+headerHD50F.xml
+headerHD50F.i3d
+headerHD50F.i3d.shapes
+headerHD50F*.dds
+store_headerHD50F.dds
+beltXArray.dds
+textures/johnDeere/
