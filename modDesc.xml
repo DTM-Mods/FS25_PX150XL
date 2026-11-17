@@ -28,7 +28,7 @@ Changelog 2.9.0.0:
 - 25% yield bonus on every crop whose combine leaves no swath on the map (for example soybean, canola, sorghum), the same as alfalfa, clover and field grass.
 
 Changelog 2.8.2.1:
-- The author now shows as DTM Mods, PropaineX in the mod list.
+- The author shown in the mod list was updated.
 
 Changelog 2.8.2.0:
 - Yield bonus raised to 25% and now also applies to field grass (alfalfa, clover and field grass).
@@ -98,7 +98,7 @@ Changelog 2.1.3.0:
 - Lowered header front tilted up 10 degrees and cutting height lowered.
 
 Changelog 2.1.2.0:
-- Square steel cross tube between the rear braces now supports the top hitch and PropaineX name.
+- Square steel cross tube between the rear braces now supports the top hitch and the name lettering.
 - Mass set to 2.95 t.
 
 Changelog 2.1.1.0:
@@ -106,7 +106,7 @@ Changelog 2.1.1.0:
 
 Changelog 2.1.0.0:
 - Complete M1240 windrower conversion with central grain swath.
-- Edited animated header, custom brackets, dark paint and PropaineX/PX150XL branding.
+- Edited animated header, custom brackets, dark paint and PX150XL lettering.
 - New shop image and Pro Edition mod icon.]]></en>
         <de><![CDATA[Shopkategorie: Sonderschneidwerke
 Preis: 144.500 €
@@ -129,7 +129,7 @@ Changelog 2.9.0.0:
 - 25% Ertragsbonus auf alle Fruechte, bei denen der Maehdrescher auf der Karte kein Schwad ablegt (z. B. Sojabohnen, Raps, Sorghum), wie bei Luzerne, Klee und Feldgras.
 
 Changelog 2.8.2.1:
-- Als Autor wird jetzt DTM Mods, PropaineX angezeigt.
+- Der in der Modliste angezeigte Autor wurde aktualisiert.
 
 Changelog 2.8.2.0:
 - Ertragsbonus auf 25% erhoeht, gilt jetzt auch fuer Feldgras (Luzerne, Klee und Feldgras).
@@ -190,7 +190,7 @@ Changelog 2.1.3.0:
 - Abgesenktes Schneidwerk vorne um 10 Grad angehoben, Schnitthoehe abgesenkt.
 
 Changelog 2.1.2.0:
-- Vierkant-Stahlquerrohr zwischen den hinteren Streben stuetzt jetzt Oberlenkerbock und PropaineX-Schriftzug.
+- Vierkant-Stahlquerrohr zwischen den hinteren Streben stuetzt jetzt Oberlenkerbock und Namensschriftzug.
 - Gewicht auf 2,95 t gesetzt.
 
 Changelog 2.1.1.0:
@@ -198,7 +198,7 @@ Changelog 2.1.1.0:
 
 Changelog 2.1.0.0:
 - Vollstaendiger M1240-Umbau mit zentraler Schwadablage.
-- Bearbeitetes animiertes Modell, eigene Halterungen, dunkle Lackierung und PropaineX/PX150XL-Beschriftung.
+- Bearbeitetes animiertes Modell, eigene Halterungen, dunkle Lackierung und PX150XL-Beschriftung.
 - Neues Shopbild und Pro-Edition-Modsymbol.]]></de>
     </description>
     <iconFilename>icon_px150xl.dds</iconFilename>
