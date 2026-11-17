@@ -7,11 +7,15 @@
         <de>PX150 XL Schwadschneidwerk Pro Edition</de>
     </title>
     <description>
-        <en><![CDATA[PX150 XL Windrower Pro Edition by PropaineX.
-15.2 m grain windrower header for the MacDon M1240.
+        <en><![CDATA[Category: Special Headers
+Price: $144,500
+Required power: 61 hp (45 kW)
+Working width: 15.2 m
+Working speed: 10 kph
+
+PX150 XL Windrower Pro Edition: a 15.2 m grain windrower header for the MacDon M1240.
 Cuts every crop the map lists for grain headers. Crops with a map swath are laid as swaths; rye and triticale get their own swaths coloured like their grain; other grain header crops are laid as a grain row. Pick up with the MacDon PW8.
-Requires the MacDon Pack. Category: Special Headers.
-Price: $144,500. Working speed: 10 km/h. Required power: 45 kW.
+Requires the MacDon Pack (DLC).
 
 Changelog 2.9.0.2:
 - Updated for the current game version (modDesc version 116).
@@ -104,11 +108,15 @@ Changelog 2.1.0.0:
 - Complete M1240 windrower conversion with central grain swath.
 - Edited animated header, custom brackets, dark paint and PropaineX/PX150XL branding.
 - New shop image and Pro Edition mod icon.]]></en>
-        <de><![CDATA[PX150 XL Schwadschneidwerk Pro Edition von PropaineX.
-15,2 m Getreideschneidwerk fuer den MacDon M1240.
+        <de><![CDATA[Shopkategorie: Sonderschneidwerke
+Preis: 144.500 €
+Benötigte Leistung: 61 PS (45 kW)
+Arbeitsbreite: 15,2 m
+Arbeitsgeschwindigkeit: 10 km/h
+
+PX150 XL Schwadschneidwerk Pro Edition: ein 15,2 m Getreideschneidwerk fuer den MacDon M1240.
 Schneidet alle Fruechte, die die Karte fuer Getreideschneidwerke vorsieht. Fruechte mit Kartenschwad werden als Schwad abgelegt, Roggen und Triticale als eigene Schwade in Kornfarbe, andere als Kornreihe. Aufnahme mit dem MacDon PW8.
-Benoetigt das MacDon Pack. Kategorie: Sonderschneidwerke.
-Preis: 144.500 EUR. Arbeitsgeschwindigkeit: 10 km/h. Leistungsbedarf: 45 kW.
+Benoetigt das MacDon Pack (DLC).
 
 Changelog 2.9.0.2:
 - An die aktuelle Spielversion angepasst (modDesc-Version 116).
@@ -227,13 +235,10 @@ Changelog 2.1.0.0:
             <de>MacDon Rot</de>
         </text>
         <text name="px150_endCapOrange">
-            <en>PropaineX orange</en>
-            <de>PropaineX Orange</de>
+            <en>End cap orange</en>
+            <de>Endkappen-Orange</de>
         </text>
     </l10n>
-    <brands>
-        <brand name="PROPAINEX" title="PropaineX" image="brand_propainex.dds" />
-    </brands>
     <specializations>
         <specialization name="yieldBonus" className="PX150YieldBonus" filename="scripts/PX150YieldBonus.lua" />
         <specialization name="grainHeaderCrops" className="PX150GrainHeaderCrops" filename="scripts/PX150GrainHeaderCrops.lua" />

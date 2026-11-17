@@ -9,3 +9,6 @@ headerHD50F*.dds
 store_headerHD50F.dds
 beltXArray.dds
 textures/johnDeere/
+
+# the mod's own brand is gone (store brand is MACDON, ModHub: no modder references); the image stays in the repo
+brand_propainex.dds
