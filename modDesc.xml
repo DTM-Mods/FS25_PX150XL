@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <modDesc descVersion="116">
     <author>DTM Mods, PropaineX</author>
-    <version>2.9.0.3</version>
+    <version>2.9.1.0</version>
     <title>
         <en>PX150 XL Windrower Pro Edition</en>
         <de>PX150 XL Schwadschneidwerk Pro Edition</de>
@@ -16,6 +16,9 @@ Working speed: 10 kph
 PX150 XL Windrower Pro Edition: a 15.2 m grain windrower header for the MacDon M1240.
 Cuts every crop the map lists for grain headers. Crops with a map swath are laid as swaths; rye and triticale get their own swaths coloured like their grain; other grain header crops are laid as a grain row. Pick up with the MacDon PW8.
 Requires the MacDon Pack (DLC).
+
+Changelog 2.9.1.0:
+- Yield bonus on crops whose combine leaves no straw lowered to 10%. Alfalfa, clover and field grass stay at 25%.
 
 Changelog 2.9.0.3:
 - Sold under the MacDon brand (the MacDon DLC it needs).
@@ -123,6 +126,9 @@ Arbeitsgeschwindigkeit: 10 km/h
 PX150 XL Schwadschneidwerk Pro Edition: ein 15,2 m Getreideschneidwerk fuer den MacDon M1240.
 Schneidet alle Fruechte, die die Karte fuer Getreideschneidwerke vorsieht. Fruechte mit Kartenschwad werden als Schwad abgelegt, Roggen und Triticale als eigene Schwade in Kornfarbe, andere als Kornreihe. Aufnahme mit dem MacDon PW8.
 Benoetigt das MacDon Pack (DLC).
+
+Changelog 2.9.1.0:
+- Ertragsbonus auf Fruechte, bei denen der Maehdrescher kein Stroh ablegt, auf 10% gesenkt. Luzerne, Klee und Feldgras bleiben bei 25%.
 
 Changelog 2.9.0.3:
 - Wird unter der Marke MacDon verkauft (das benötigte MacDon-DLC).

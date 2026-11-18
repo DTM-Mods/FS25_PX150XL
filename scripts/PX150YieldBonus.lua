@@ -1,11 +1,11 @@
 -- Fixed yield bonuses on this header's private converter records:
 -- alfalfa, clover and field grass +25%; any crop whose combine leaves no swath on the
--- loaded map (no windrow fill type in its crop file) +25%. Every other crop keeps the map's factor.
+-- loaded map (no windrow fill type in its crop file) +10%. Every other crop keeps the map's factor.
 PX150YieldBonus = {}
 
 PX150YieldBonus.FACTOR = 1.25
 PX150YieldBonus.FRUITS = {ALFALFA=true, CLOVER=true, FIELDGRASS=true}
-PX150YieldBonus.NO_SWATH_FACTOR = 1.25
+PX150YieldBonus.NO_SWATH_FACTOR = 1.10
 
 function PX150YieldBonus.getFactor(fruitType)
     if PX150YieldBonus.FRUITS[fruitType.name] then

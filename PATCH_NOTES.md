@@ -1,5 +1,9 @@
 # Patch notes
 
+## 2.9.1.0
+
+- Yield bonus on crops whose combine leaves no straw lowered to 10%. Alfalfa, clover and field grass stay at 25%.
+
 ## 2.9.0.3
 
 - Sold under the MacDon brand (the MacDon DLC it needs).
