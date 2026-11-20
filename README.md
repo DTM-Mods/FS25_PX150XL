@@ -55,7 +55,7 @@ Farming Simulator 25 windrower project by PropaineX, for the MacDon M1240. Requi
 
 Current version: **2.9.0.0** (the version is in `modDesc.xml`; the notes below are the history of earlier versions). Working width: 15.2 m. Mass: 2.45 t.
 
-2.5.2.0 corrected the base Vehicle.lua source path and binds multiplayer clearance updates to the current attachment. Offline network lifecycle, native-function and numerical tests pass; live multiplayer remains unverified. Built to Testing_local/FS25_PX150XL.zip only; all 10 runtime entries verified against source, ZIP CRC/layout passed, and all 13 non-GUI TestRunner modules passed (2 GUI modules skipped).
+2.5.2.0 corrected the base Vehicle.lua source path and binds multiplayer clearance updates to the current attachment. Offline network lifecycle, native-function and numerical tests pass; live multiplayer remains unverified. Built to Local_testing/FS25_PX150XL.zip only; all 10 runtime entries verified against source, ZIP CRC/layout passed, and all 13 non-GUI TestRunner modules passed (2 GUI modules skipped).
 
 The lowered attachment height is set to **0.30 m**, with a **10 degree lower rotation offset**. The user confirmed this height works in game. The offset is not a measured angle relative to the ground.
 
@@ -71,7 +71,7 @@ This header includes a fixed **25% yield bonus on alfalfa, clover and field gras
 
 ### Building
 
-Run `python source/mechanical/package_local.py` to build `FS25_PX150XL.zip` in the sibling profile's `Testing_local` folder. The script collects runtime dependencies and verifies archive integrity and each file against the source. It excludes development files from the ZIP.
+Run `python source/mechanical/package_local.py` to build `FS25_PX150XL.zip` in the sibling profile's `Local_testing` folder. The script collects runtime dependencies and verifies archive integrity and each file against the source. It excludes development files from the ZIP.
 
 This repository includes development materials; do not ZIP the entire repository for installation. Referenced base-game files are provided by the game installation.
 

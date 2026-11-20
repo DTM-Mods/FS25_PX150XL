@@ -4,7 +4,7 @@ import hashlib, json, os, socket, uuid, zipfile
 import paramiko
 
 ROOT = Path(__file__).resolve().parents[2]
-LOCAL = ROOT.parents[1] / 'Testing_local/FS25_PX150XL.zip'
+LOCAL = ROOT.parents[1] / 'Local_testing/FS25_PX150XL.zip'
 REMOTE = '/testing/FS25_PX150XL.zip'
 PIN = 'c86a73d27b4a323a048b5ba6831dc815'
 PASSWORD = os.environ.get('FS25_SFTP_PASSWORD', '').strip()

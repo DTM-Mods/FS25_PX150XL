@@ -1,7 +1,7 @@
 from pathlib import Path
 import zipfile,hashlib,xml.etree.ElementTree as E,json
 root=Path(__file__).resolve().parents[2]
-out=root.parent.parent/'Testing_local'/'FS25_PX150XL.zip'
+out=root.parent.parent/'Local_testing'/'FS25_PX150XL.zip'
 files={root/'modDesc.xml'}
 d=E.parse(root/'modDesc.xml').getroot();vpath=root/d.find('storeItems/storeItem').get('xmlFilename');files.add(vpath)
 for e in d.iter():
